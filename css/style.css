@@ -68,16 +68,31 @@ sidebar {
   height: 710px;
   display: block; }
   sidebar ul li {
-    display: block;
-    height: 75px;
-    border-bottom: 1px solid #e4e3e3;
-    padding-left: 35px; }
+    border-bottom: 1px solid #e4e3e3; }
+    sidebar ul li a {
+      display: block;
+      height: 59px;
+      padding: 16px 19px 0 35px; }
+      sidebar ul li a p {
+        line-height: 47px;
+        padding-left: 10px;
+        display: inline-block; }
+      sidebar ul li a img {
+        float: left; }
   sidebar ul .active {
     background-color: #243e8f; }
     sidebar ul .active p {
-      color: white; }
+      color: white;
+      display: block;
+      padding-left: 53px; }
   sidebar ul .vonnach {
     height: 153px; }
+    sidebar ul .vonnach a {
+      height: 137px; }
+    sidebar ul .vonnach p {
+      line-height: 1.6em; }
+    sidebar ul .vonnach img {
+      margin-top: 20px; }
   sidebar ul .preis {
     border: none; }
 

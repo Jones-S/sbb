@@ -94,25 +94,52 @@ sidebar {
 	display: block;
 	
 	ul {
+		$padding: 16px; 
 		
 		li {
-			display: block;
-			height: 75px;
 			border-bottom: 1px solid #e4e3e3;
-			padding-left: 35px;
-			p {
+						
+			a {
+			
+				display: block;
+				height: 75px - $padding ;
+				padding: $padding 19px 0 35px;
+
+
+				p {
+					line-height: 47px;
+					padding-left: 10px;
+					display: inline-block;
+				}
+				
+				img {
+					float: left;
+				}
 			}
+			
 		}
 		
 		.active {
 			background-color: #243e8f;
 			p {
 				color: white;
+				display: block;
+				padding-left: 53px;
 			}
 		}
 		
 		.vonnach {
 			height: 153px;
+			a {
+				height: 153px - $padding;
+			}
+			
+			p {
+				line-height: 1.6em;
+			}
+			img {
+				margin-top: 20px;
+			}
 		}
 		
 		.preis {
