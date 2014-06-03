@@ -1,0 +1,141 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	border: none;
+	font-weight: normal;
+	list-style: none;
+}
+
+html { background-color: black;}
+
+body {
+	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman";
+	font-weight:400; 
+	font-stretch:normal;
+	font-size: 19px;
+	}
+
+
+#container {
+	margin:0 auto;
+	width: 1024px;
+	height: 768px;
+	overflow: hidden;
+	background-color: #ebebeb;
+	
+}
+
+header {
+	background-color: white;
+	height: 38px;
+	width: 1024px - (35*2)px;
+	padding: 10px 35px 10px 35px;
+	
+	img.logo {
+		float: left;
+		margin-top: 6px;
+		margin-right: 20px;
+	}
+	
+	#date {
+		margin-right: 30px;
+		float: left;
+		height: 38px;
+		margin-left: 50px;
+		
+		
+		p {
+			float: left;
+			line-height: 38px;
+			font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold";
+			font-weight:600;
+		}
+		
+		.datum {
+			margin-right: 20px;
+			font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman";
+			font-weight:400;
+		}
+		
+	}
+	
+	.button {
+		background-color: #6b7786;
+		float: right;
+		display: block;
+		height: 38px;
+		-moz-border-radius: 4px 4px;
+		border-radius: 4px 4px;
+		padding: 0 15px 0 15px;
+		
+		p {
+			line-height: 38px;
+			color: white;
+		}
+	}
+	
+	.question {
+		width: auto;
+		margin-right: 20px;
+	}
+	
+	.abbrechen {
+		background-color: #ed1c24;
+	}
+		
+}
+
+
+sidebar {
+	background-color: #f8f8f8;
+	width: 338px;
+	height: 768px - 58px;
+	display: block;
+	
+	ul {
+		
+		li {
+			display: block;
+			height: 75px;
+			border-bottom: 1px solid #e4e3e3;
+			padding-left: 35px;
+			p {
+			}
+		}
+		
+		.active {
+			background-color: #243e8f;
+			p {
+				color: white;
+			}
+		}
+		
+		.vonnach {
+			height: 153px;
+		}
+		
+		.preis {
+			border: none;
+		}
+	}
+}
+
+
+
+
+
+/* -------- FORMATTING */
+
+
+.bold {
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold";
+	font-weight:600;
+}
+
+.regular {
+	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman";
+			font-weight:400;
+
+}
+

@@ -6,43 +6,63 @@
 	<meta name="description" content="" />
   	<meta name="keywords" content="" />
 	<meta name="robots" content="" />
-	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 <body>
 
 <div id="container">
 
 	<header>
-		<img src="img/sbblogo.png">
+		<img class="logo" src="img/sbblogo.png">
 		<div id="date">
-			<p>12.08.2014</p>
+			<p class="datum">12.08.2014</p>
 			<p>09:34</p>
-		</div> <!-- date -->	
+		</div> <!-- date -->
+		<div class="button abbrechen">
+			<p>X Abbrechen</p>
+		</div>	
 		<div class="button question">
 			<p>?</p>
 		</div>
-		<div class="button abbrechen">
-			<p>X Abbrechen</p>
-		</div>		
+			
 	
 	</header>
 	
 	
 	<sidebar>
 		<ul class="tabs">
-			<li class="tab vonnach">
+			<li class="tab vonnach active">
 				<img class="icon ic_vonnach" alt="" />
-				<p>Von</p>
-				<p>Zürich HB</p>
-				<p>Nach</p>
-				<p>Zielort</p>
+				<p class="regular">Von</p>
+				<p class="bold">Zürich HB</p>
+				<p class="regular">Nach</p>
+				<p class="bold">Zielort</p>
+				<img class="active_triangle" alt="" src="" />
 			</li>
-			<li class="tab via"></li>
-			<li class="tab datum"></li>
-			<li class="tab einfachretour"></li>
-			<li class="tab klasse"></li>
-			<li class="tab tickets"></li>
-			<li class="tab preis"></li>
+			<li class="tab via">
+				<img class="icon ic_vonnach" alt="" />
+				<p>Via</p>
+			</li>
+			<li class="tab datum">
+				<img class="icon ic_datum" alt="" />
+				<p>Datum</p>
+			</li>
+			<li class="tab einfachretour">
+				<img class="icon ic_einfachretour" alt="" />
+				<p>Einfach/Retour</p>
+			</li>
+			<li class="tab klasse">
+				<img class="icon ic_klasse" alt="" />
+				<p>Klasse</p>
+			</li>
+			<li class="tab tickets">
+				<img class="icon ic_tickets" alt="" />
+				<p>Anzahl Tickets</p>
+			</li>
+			<li class="tab preis">
+				<img class="icon ic_preis" alt="" />
+				<p>Preis</p>
+			</li>
 		</ul>
 	</sidebar>
 	
