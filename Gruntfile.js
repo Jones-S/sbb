@@ -17,8 +17,8 @@ module.exports = function (grunt) {
                 options: {
                     livereload: false
                 },
-                files: ['scss/**'],
-                tasks: ['sass']
+                files: ['scss/**', 'tpl/**'],
+                tasks: ['sass', 'htmlbuild']
             }
         },
         sass: {
@@ -39,13 +39,13 @@ module.exports = function (grunt) {
                 relative: true,
                 sections: {
                     layout: {
-                        content1: 'tpl/content1.tpl.html',
+                        vonnach: 'tpl/vonnach.tpl.html',
                     }
                 }
             },
             index: {
                 src: 'tpl/index.tpl.html',
-                dest: 'startziel.html'
+                dest: 'index.html'
             },
             /* detail: {
                 src: 'html/tpl/detail.tpl.html',
