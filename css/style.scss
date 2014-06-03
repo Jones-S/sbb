@@ -26,6 +26,11 @@ body {
 	
 }
 
+hr.clear {
+	clear: both;
+	height: 0;
+}
+
 header {
 	background-color: white;
 	height: 38px;
@@ -94,6 +99,12 @@ sidebar {
 	display: block;
 	
 	ul {
+		img.active_triangle {
+			position: relative;
+			float: right;
+			top: 67px;
+		}
+		
 		$padding: 16px; 
 		
 		li {
@@ -103,7 +114,7 @@ sidebar {
 			
 				display: block;
 				height: 75px - $padding ;
-				padding: $padding 19px 0 35px;
+				padding: $padding 25px 0 35px;
 
 
 				p {
@@ -114,6 +125,14 @@ sidebar {
 				
 				img {
 					float: left;
+				}
+				
+				p.aendern {
+					font-size: 14px;
+					color: #566373;
+					float: right;
+					position: relative;
+					
 				}
 			}
 			
@@ -126,6 +145,10 @@ sidebar {
 				display: block;
 				padding-left: 53px;
 			}
+			
+			p.aendern {
+				color: white;
+			}
 		}
 		
 		.vonnach {
@@ -137,14 +160,23 @@ sidebar {
 			p {
 				line-height: 1.6em;
 			}
-			img {
+			img.icon{
 				margin-top: 20px;
+			}
+			
+			p.aendern {
+				top: -73px;
 			}
 		}
 		
 		.preis {
 			border: none;
+			.chf {
+				font-size: 46px;
+			}
 		}
+		
+
 	}
 }
 
