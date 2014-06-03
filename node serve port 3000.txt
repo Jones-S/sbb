@@ -1,0 +1,3 @@
+Jonass-MacBook-Pro-2:~ Jonas$ cd /Users/Jonas/Documents/ZHDK\ IAD/09\ Graphical\ User\ Interface/02\ SBB\ Repository/sbb 
+Jonass-MacBook-Pro-2:sbb Jonas$ serve
+serving /Users/Jonas/Documents/ZHDK IAD/09 Graphical User Interface/02 SBB Repository/sbb on port 3000

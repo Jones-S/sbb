@@ -61,7 +61,8 @@ header {
     height: 38px;
     padding: 0 15px 0 15px; }
     header .button:hover {
-      background-color: #3f444d; }
+      background-color: #3f444d;
+      -webkit-tap-highlight-color: transparent; }
     header .button p {
       line-height: 38px;
       color: white; }
@@ -71,7 +72,8 @@ header {
   header .abbrechen {
     background-color: #ed1c24; }
     header .abbrechen:hover {
-      background-color: #b20000; }
+      background-color: #b20000;
+      -webkit-tap-highlight-color: transparent; }
 
 sidebar {
   background-color: #f8f8f8;
@@ -174,8 +176,9 @@ sidebar {
       position: relative;
       text-align: center;
       float: left; }
-      #content .start_ziel a.start:active, #content .start_ziel a.ziel:active {
-        background-color: #b20000; }
+      #content .start_ziel a.start:hover, #content .start_ziel a.ziel:hover {
+        background-color: #b20000;
+        -webkit-tap-highlight-color: transparent; }
     #content .start_ziel .enterstart {
       margin-bottom: 30px; }
   #content .schnellauswahl h2 {

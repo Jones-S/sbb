@@ -86,6 +86,7 @@ header {
 		
 		&:hover {
 			background-color: $sbb-grau2;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
 		}
 		
 		p {
@@ -103,6 +104,7 @@ header {
 		background-color: $sbb-rot;
 		&:hover {
 			background-color: $sbb-rot2;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
 		}
 	}
 		
@@ -264,8 +266,9 @@ sidebar {
 			float: left;
 			
 			
-			&:active { 
-				background-color: $sbb-rot2;	
+			&:hover { 
+				background-color: $sbb-rot2;
+				-webkit-tap-highlight-color: rgba(0,0,0,0);	
 			}
 		}
 		
