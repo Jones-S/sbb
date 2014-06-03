@@ -1,0 +1,67 @@
+'use strict';
+
+module.exports = function (grunt) {
+
+    grunt.initConfig({
+        connect: {
+            local: {
+                options: {
+                    base: '',
+                    hostname: '0.0.0.0',
+                    port: 9001
+                }
+            }
+        },
+        watch: {
+            scss: {
+                options: {
+                    livereload: false
+                },
+                files: ['scss/**'],
+                tasks: ['sass']
+            }
+        },
+        sass: {
+            main: {
+                files: [{
+                    expand: true,
+                    cwd: 'scss/',
+                    src: ['style.scss'],
+                    dest: 'css',
+                    ext: '.css'
+                }]
+            }
+        },
+        
+         htmlbuild: {
+            options: {
+                beautify: true,
+                relative: true,
+                sections: {
+                    layout: {
+                        content1: 'tpl/content1.tpl.html',
+                    }
+                }
+            },
+            index: {
+                src: 'tpl/index.tpl.html',
+                dest: 'startziel.html'
+            },
+            /* detail: {
+                src: 'html/tpl/detail.tpl.html',
+                dest: 'html/detail.html'
+            } */	
+        }
+    });
+    
+
+    require('load-grunt-tasks')(grunt);
+
+    grunt.registerTask('local', ['server:local']);
+    grunt.registerTask('server', ['server:local']);
+    grunt.registerTask('server:local', ['sass', 'htmlbuild', 'connect:local', 'watch']);
+
+    grunt.registerTask('default', ['local']);
+
+
+};

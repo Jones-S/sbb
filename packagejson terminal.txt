@@ -1,0 +1,49 @@
+Jonass-MacBook-Pro-2:sbb Jonas$ cd ..
+Jonass-MacBook-Pro-2:02 SBB Repository Jonas$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sane defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg> --save` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+name: (02 SBB Repository) sbb
+version: (0.0.0) 
+description: sbb prototype for 09 basic gui module
+entry point: (index.js) index.html
+test command: -
+git repository: https://github.com/Jones-S/sbb
+keywords: sbb
+author: jonas
+license: (ISC) none
+About to write to /Users/Jonas/Documents/ZHDK IAD/09 Graphical User Interface/02 SBB Repository/package.json:
+
+{
+  "name": "sbb",
+  "version": "0.0.0",
+  "description": "sbb prototype for 09 basic gui module",
+  "main": "index.html",
+  "scripts": {
+    "test": "-"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jones-S/sbb"
+  },
+  "keywords": [
+    "sbb"
+  ],
+  "author": "jonas",
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/Jones-S/sbb/issues"
+  },
+  "homepage": "https://github.com/Jones-S/sbb"
+}
+
+
+Is this ok? (yes) 
+Jonass-MacBook-Pro-2:02 SBB Repository Jonas$ 
