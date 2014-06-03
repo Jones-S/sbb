@@ -62,7 +62,7 @@ header {
       color: white; }
   header .question {
     width: auto;
-    margin-right: 20px; }
+    margin-right: 11px; }
   header .abbrechen {
     background-color: #ed1c24; }
 
@@ -70,7 +70,8 @@ sidebar {
   background-color: #f8f8f8;
   width: 338px;
   height: 710px;
-  display: block; }
+  display: block;
+  float: left; }
   sidebar ul img.active_triangle {
     position: relative;
     float: right;
@@ -80,7 +81,7 @@ sidebar {
     sidebar ul li a {
       display: block;
       height: 59px;
-      padding: 16px 25px 0 35px; }
+      padding: 16px 25px 0 31px; }
       sidebar ul li a p {
         line-height: 47px;
         padding-left: 10px;
@@ -103,17 +104,32 @@ sidebar {
   sidebar ul .vonnach {
     height: 153px; }
     sidebar ul .vonnach a {
-      height: 137px; }
+      height: 133px;
+      padding-top: 20px; }
     sidebar ul .vonnach p {
       line-height: 1.6em; }
+    sidebar ul .vonnach .regular {
+      font-size: 18px;
+      line-height: 1.2em; }
+    sidebar ul .vonnach .bold {
+      margin-bottom: 7px; }
     sidebar ul .vonnach img.icon {
-      margin-top: 20px; }
+      margin-top: 25px; }
     sidebar ul .vonnach p.aendern {
-      top: -73px; }
+      top: -69px; }
   sidebar ul .preis {
     border: none; }
     sidebar ul .preis .chf {
       font-size: 46px; }
+
+#content {
+  width: 620px;
+  height: 643px;
+  float: left;
+  padding: 33px; }
+  #content h1 {
+    font-size: 30px;
+    color: #576374; }
 
 /* -------- FORMATTING */
 .bold {

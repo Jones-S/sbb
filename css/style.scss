@@ -82,7 +82,7 @@ header {
 	
 	.question {
 		width: auto;
-		margin-right: 20px;
+		margin-right: 11px;
 	}
 	
 	.abbrechen {
@@ -97,6 +97,7 @@ sidebar {
 	width: 338px;
 	height: 768px - 58px;
 	display: block;
+	float: left;
 	
 	ul {
 		img.active_triangle {
@@ -114,7 +115,7 @@ sidebar {
 			
 				display: block;
 				height: 75px - $padding ;
-				padding: $padding 25px 0 35px;
+				padding: $padding 25px 0 31px;
 
 
 				p {
@@ -154,18 +155,23 @@ sidebar {
 		.vonnach {
 			height: 153px;
 			a {
-				height: 153px - $padding;
+				height: 153px - $padding - 4px;
+				padding-top: $padding + 4px;
 			}
 			
 			p {
 				line-height: 1.6em;
 			}
+			
+			.regular { font-size: 18px; line-height: 1.2em; }
+			.bold { margin-bottom: 7px; }
+			
 			img.icon{
-				margin-top: 20px;
+				margin-top: 25px;
 			}
 			
 			p.aendern {
-				top: -73px;
+				top: -69px;
 			}
 		}
 		
@@ -181,6 +187,18 @@ sidebar {
 }
 
 
+#content {
+	$padding2: 33px;
+	width: 1024px - 338px - 2*$padding2;
+	height: 709px - 2*$padding2;
+	float: left;
+	padding: $padding2;
+	
+	h1 {
+		font-size: 30px;
+		color: #576374;
+	}
+}
 
 
 
