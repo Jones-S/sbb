@@ -308,6 +308,41 @@ sidebar {
 	}
 	
 	section#zielaendern {
+		$padding2: 33px;
+		width: 1024px - 2*$padding2;
+		height: 709px - 2*$padding2;
+		float: left;
+		padding: $padding2;
+		
+		.zieleingabe {
+		
+			a.zurueck {
+				line-height: 36px;
+				padding: 5px 15px 5px 35px;
+				color: white;
+				display: block;
+				margin-bottom: 7px;
+				width: intrinsic;
+				margin-bottom: 15px;
+				font-size: 19px;
+				
+				&:hover {
+					background-color: $sbb-grau2;
+					-webkit-tap-highlight-color: rgba(0,0,0,0);	
+				}
+			}
+			
+			input {
+				font-size: 30px;
+				-moz-border-radius: 4px 4px;
+				border-radius: 4px 4px;
+				padding: 5px 15px 5px 15px;
+				line-height: 30px;
+				width: 958px;
+			}
+			
+		} 
+		
 		
 	}
 	
