@@ -1,141 +1,42 @@
-* {
-  padding: 0;
-  margin: 0;
-  outline: none;
-  border: none;
-  font-weight: normal;
-  list-style: none; }
+/*
+Syntax error: Invalid CSS after "$sbb-rot": expected ":", was "* {"
+        on line 3 of /Users/Jonas/Documents/ZHDK IAD/09 Graphical User Interface/02 SBB Repository/sbb/css/style.scss
 
-html {
-  background-color: black; }
+1: $sbb-rot
+2: 
+3: * {
+4: 	padding: 0;
+5: 	margin: 0;
+6: 	outline: none;
+7: 	border: none;
+8: 	font-weight: normal;
 
-body {
-  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman";
-  font-weight: 400;
-  font-stretch: normal;
-  font-size: 19px; }
-
-#container {
-  margin: 0 auto;
-  width: 1024px;
-  height: 768px;
-  overflow: hidden;
-  background-color: #ebebeb; }
-
-hr.clear {
-  clear: both;
-  height: 0; }
-
-header {
-  background-color: white;
-  height: 38px;
-  width: 954px px;
-  padding: 10px 35px 10px 35px; }
-  header img.logo {
-    float: left;
-    margin-top: 6px;
-    margin-right: 20px; }
-  header #date {
-    margin-right: 30px;
-    float: left;
-    height: 38px;
-    margin-left: 50px; }
-    header #date p {
-      float: left;
-      line-height: 38px;
-      font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold";
-      font-weight: 600; }
-    header #date .datum {
-      margin-right: 20px;
-      font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman";
-      font-weight: 400; }
-  header .button {
-    background-color: #6b7786;
-    float: right;
-    display: block;
-    height: 38px;
-    -moz-border-radius: 4px 4px;
-    border-radius: 4px 4px;
-    padding: 0 15px 0 15px; }
-    header .button p {
-      line-height: 38px;
-      color: white; }
-  header .question {
-    width: auto;
-    margin-right: 11px; }
-  header .abbrechen {
-    background-color: #ed1c24; }
-
-sidebar {
-  background-color: #f8f8f8;
-  width: 338px;
-  height: 710px;
-  display: block;
-  float: left; }
-  sidebar ul img.active_triangle {
-    position: relative;
-    float: right;
-    top: 67px; }
-  sidebar ul li {
-    border-bottom: 1px solid #e4e3e3; }
-    sidebar ul li a {
-      display: block;
-      height: 59px;
-      padding: 16px 25px 0 31px; }
-      sidebar ul li a p {
-        line-height: 47px;
-        padding-left: 10px;
-        display: inline-block; }
-      sidebar ul li a img {
-        float: left; }
-      sidebar ul li a p.aendern {
-        font-size: 14px;
-        color: #566373;
-        float: right;
-        position: relative; }
-  sidebar ul .active {
-    background-color: #243e8f; }
-    sidebar ul .active p {
-      color: white;
-      display: block;
-      padding-left: 53px; }
-    sidebar ul .active p.aendern {
-      color: white; }
-  sidebar ul .vonnach {
-    height: 153px; }
-    sidebar ul .vonnach a {
-      height: 133px;
-      padding-top: 20px; }
-    sidebar ul .vonnach p {
-      line-height: 1.6em; }
-    sidebar ul .vonnach .regular {
-      font-size: 18px;
-      line-height: 1.2em; }
-    sidebar ul .vonnach .bold {
-      margin-bottom: 7px; }
-    sidebar ul .vonnach img.icon {
-      margin-top: 25px; }
-    sidebar ul .vonnach p.aendern {
-      top: -69px; }
-  sidebar ul .preis {
-    border: none; }
-    sidebar ul .preis .chf {
-      font-size: 46px; }
-
-#content {
-  width: 620px;
-  height: 643px;
-  float: left;
-  padding: 33px; }
-  #content h1 {
-    font-size: 30px;
-    color: #576374; }
-
-/* -------- FORMATTING */
-.bold {
-  font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold";
-  font-weight: 600; }
-
-.regular {
-  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman";
-  font-weight: 400; }
+Backtrace:
+/Users/Jonas/Documents/ZHDK IAD/09 Graphical User Interface/02 SBB Repository/sbb/css/style.scss:3
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/scss/parser.rb:1306:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/scss/parser.rb:1242:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/scss/parser.rb:1237:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/scss/parser.rb:598:in `variable'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/scss/parser.rb:654:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/scss/parser.rb:644:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/scss/parser.rb:116:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/engine.rb:409:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/engine.rb:274:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:414:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:186:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:393:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:248:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/vendor/listen/lib/listen/adapter.rb:297:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"$sbb-rot\": expected \":\", was \"* {\"\A         on line 3 of /Users/Jonas/Documents/ZHDK IAD/09 Graphical User Interface/02 SBB Repository/sbb/css/style.scss\A \A 1: $sbb-rot\A 2: \A 3: * {\A 4: 	padding: 0;\A 5: 	margin: 0;\A 6: 	outline: none;\A 7: 	border: none;\A 8: 	font-weight: normal;"; }

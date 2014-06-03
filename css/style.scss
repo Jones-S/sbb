@@ -1,3 +1,5 @@
+$sbb-rot
+
 * {
 	padding: 0;
 	margin: 0;
@@ -5,7 +7,9 @@
 	border: none;
 	font-weight: normal;
 	list-style: none;
+	text-decoration: none;
 }
+
 
 html { background-color: black;}
 
@@ -116,6 +120,7 @@ sidebar {
 				display: block;
 				height: 75px - $padding ;
 				padding: $padding 25px 0 31px;
+				color: black;
 
 
 				p {
@@ -197,6 +202,48 @@ sidebar {
 	h1 {
 		font-size: 30px;
 		color: #576374;
+		margin-bottom: 30px;
+	}
+	
+	input {
+		font-size: 30px;
+		-moz-border-radius: 4px 4px;
+		border-radius: 4px 4px;
+		-moz-border-radius-topright: 0 0;
+		border-top-right-radius: 0 0;
+		-moz-border-radius-bottomright: 0 0;
+		border-bottom-right-radius: 0 0;
+		padding: 5px 15px 5px 15px;
+		line-height: 30px;
+		display: inline-block;
+		width: 445px;
+	}
+	
+	a.start, a.ziel {
+		background-color: #ed1c24;
+		display: inline-block;
+		font-size: 19px;
+		line-height: 37px;
+		-moz-border-radius: 4px 4px;
+		border-radius: 4px 4px;
+		-moz-border-radius-topleft: 0 0;
+		border-top-left-radius: 0 0;
+		-moz-border-radius-bottomleft: 0 0;
+		border-bottom-left-radius: 0 0;
+		padding: 5px 15px 5px 15px;
+		color: white;
+		left: -5px;
+		top: -4px;
+		position: relative;
+		
+		&:hover { 
+			background-color: 	
+		}
+	}
+	
+	
+	.enterstart {
+		margin-bottom: 30px;
 	}
 }
 
