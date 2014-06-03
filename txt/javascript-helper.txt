@@ -1,0 +1,6 @@
+Focus on textinput -> ipad keyboard appears hopefully
+
+<script type="text/javascript">
+    var textbox = document.getElementById('my-input');
+    textbox.select();
+</script>

@@ -200,25 +200,50 @@ sidebar {
   height: 643px;
   float: left;
   padding: 33px; }
-  #content section#zielaendern .zieleingabe a.zurueck {
-    line-height: 36px;
-    padding: 5px 15px 5px 35px;
-    color: white;
-    display: block;
-    margin-bottom: 7px;
-    width: intrinsic;
-    margin-bottom: 15px;
-    font-size: 19px; }
-    #content section#zielaendern .zieleingabe a.zurueck:hover {
-      background-color: #3f444d;
-      -webkit-tap-highlight-color: transparent; }
-  #content section#zielaendern .zieleingabe input {
-    font-size: 30px;
-    -moz-border-radius: 4px 4px;
-    border-radius: 4px 4px;
-    padding: 5px 15px 5px 15px;
-    line-height: 30px;
-    width: 958px; }
+  #content section#zielaendern .zieleingabe {
+    height: 430px; }
+    #content section#zielaendern .zieleingabe a.zurueck {
+      line-height: 36px;
+      padding: 5px 15px 5px 35px;
+      color: white;
+      display: block;
+      margin-bottom: 7px;
+      width: intrinsic;
+      margin-bottom: 15px;
+      font-size: 19px; }
+      #content section#zielaendern .zieleingabe a.zurueck:hover {
+        background-color: #3f444d;
+        -webkit-tap-highlight-color: transparent; }
+    #content section#zielaendern .zieleingabe input {
+      font-size: 30px;
+      -moz-border-radius: 4px 4px;
+      border-radius: 4px 4px;
+      padding: 5px 15px 5px 15px;
+      line-height: 30px;
+      width: 958px;
+      z-index: 10;
+      position: relative; }
+    #content section#zielaendern .zieleingabe .button-holder {
+      background-color: #f8f8f8;
+      padding: 15px;
+      position: relative;
+      top: -3px; }
+    #content section#zielaendern .zieleingabe ul li {
+      margin-top: 10px; }
+      #content section#zielaendern .zieleingabe ul li:first-child {
+        margin-top: 0; }
+      #content section#zielaendern .zieleingabe ul li a.vorschlag {
+        line-height: 60px;
+        padding-left: 15px;
+        color: white;
+        display: block; }
+        #content section#zielaendern .zieleingabe ul li a.vorschlag:hover {
+          background-color: #3f444d;
+          -webkit-tap-highlight-color: transparent; }
+  #content section#zielaendern .keyboard img {
+    margin: 0 auto;
+    display: table;
+    vertical-align: center; }
 
 /* -------- FORMATTING */
 .bold {
