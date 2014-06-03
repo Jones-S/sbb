@@ -41,6 +41,7 @@ hr.clear {
 .button {
 	-moz-border-radius: 4px 4px;
 	border-radius: 4px 4px;
+	background-color: $sbb-grau;
 }
 
 header {
@@ -78,7 +79,7 @@ header {
 	}
 	
 	.button {
-		background-color: $sbb-grau;
+		
 		float: right;
 		display: block;
 		height: 38px;
@@ -279,8 +280,17 @@ sidebar {
 	}
 	
 	.schnellauswahl {
+		
 		h2 {
 			font-size: 23px;
+		}
+		
+		a.button {
+			line-height: 60px;
+			padding-left: 15px;
+			color: white;
+			display: block;
+			margin-bottom: 7px;
 		}
 	}
 	

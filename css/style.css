@@ -29,7 +29,8 @@ hr.clear {
 
 .button {
   -moz-border-radius: 4px 4px;
-  border-radius: 4px 4px; }
+  border-radius: 4px 4px;
+  background-color: #6b7786; }
 
 header {
   background-color: white;
@@ -55,7 +56,6 @@ header {
       font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman";
       font-weight: 400; }
   header .button {
-    background-color: #6b7786;
     float: right;
     display: block;
     height: 38px;
@@ -183,6 +183,12 @@ sidebar {
       margin-bottom: 30px; }
   #content .schnellauswahl h2 {
     font-size: 23px; }
+  #content .schnellauswahl a.button {
+    line-height: 60px;
+    padding-left: 15px;
+    color: white;
+    display: block;
+    margin-bottom: 7px; }
 
 /* -------- FORMATTING */
 .bold {
