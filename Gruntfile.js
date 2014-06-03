@@ -34,12 +34,18 @@ module.exports = function (grunt) {
         },
         
          htmlbuild: {
+         	removeprocess: {
+	         	src: 'tpl/zielaendern.tpl.html',
+	         	dest: 'tpl/zielaendern_processed.tpl.html',
+         	},
+         
             options: {
                 beautify: true,
                 relative: true,
                 sections: {
                     layout: {
                         vonnach: 'tpl/vonnach.tpl.html',
+                        zielaendern: 'tpl/zielaendern_processed.tpl.html',
                     }
                 }
             },

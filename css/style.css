@@ -132,25 +132,26 @@ sidebar {
     sidebar ul .preis .chf {
       font-size: 46px; }
 
-#content {
+#content section#vonnach {
   width: 620px;
   height: 643px;
   float: left;
   padding: 33px; }
-  #content h1 {
+  #content section#vonnach h1 {
     font-size: 30px;
     color: #576374;
     margin-bottom: 30px; }
-  #content .start_ziel {
+  #content section#vonnach .start_ziel {
+    margin-bottom: 30px;
     /* CLEARFIX */ }
-    #content .start_ziel p {
+    #content section#vonnach .start_ziel p {
       margin-bottom: 3px; }
-    #content .start_ziel .buttoncontainer:before, #content .start_ziel .buttoncontainer:after {
+    #content section#vonnach .start_ziel .buttoncontainer:before, #content section#vonnach .start_ziel .buttoncontainer:after {
       content: " ";
       display: table; }
-    #content .start_ziel .buttoncontainer:after {
+    #content section#vonnach .start_ziel .buttoncontainer:after {
       clear: both; }
-    #content .start_ziel input {
+    #content section#vonnach .start_ziel input {
       font-size: 30px;
       -moz-border-radius: 4px 4px;
       border-radius: 4px 4px;
@@ -162,7 +163,7 @@ sidebar {
       line-height: 30px;
       width: 434px;
       float: left; }
-    #content .start_ziel a.start, #content .start_ziel a.ziel {
+    #content section#vonnach .start_ziel a.start, #content section#vonnach .start_ziel a.ziel {
       background-color: #ed1c24;
       font-size: 19px;
       line-height: 36px;
@@ -176,19 +177,24 @@ sidebar {
       position: relative;
       text-align: center;
       float: left; }
-      #content .start_ziel a.start:hover, #content .start_ziel a.ziel:hover {
+      #content section#vonnach .start_ziel a.start:hover, #content section#vonnach .start_ziel a.ziel:hover {
         background-color: #b20000;
         -webkit-tap-highlight-color: transparent; }
-    #content .start_ziel .enterstart {
-      margin-bottom: 30px; }
-  #content .schnellauswahl h2 {
+    #content section#vonnach .start_ziel .enterstart {
+      margin-bottom: 3px; }
+  #content section#vonnach .schnellauswahl h2 {
     font-size: 23px; }
-  #content .schnellauswahl a.button {
+  #content section#vonnach .schnellauswahl h2.bold {
+    margin-bottom: 15px; }
+  #content section#vonnach .schnellauswahl a.button {
     line-height: 60px;
     padding-left: 15px;
     color: white;
     display: block;
     margin-bottom: 7px; }
+    #content section#vonnach .schnellauswahl a.button:hover {
+      background-color: #3f444d;
+      -webkit-tap-highlight-color: transparent; }
 
 /* -------- FORMATTING */
 .bold {
