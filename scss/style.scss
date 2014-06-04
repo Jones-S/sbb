@@ -4,6 +4,8 @@ $sbb-grau: #6b7786;
 $sbb-grau2: #3f444d;
 $sbb-hellgrau: #f8f8f8;
 
+@import "../css/via.css";
+
 * {
 	padding: 0;
 	margin: 0;
@@ -223,8 +225,7 @@ sidebar {
 
 #content {
 	position: relative;
-/* 	top: -709px; */
-	float: left;
+	top: -709px;
 
 
 	section#vonnach {
@@ -322,6 +323,12 @@ sidebar {
 			}
 		}
 		
+	}
+	
+	section#via {
+		position: relative;
+		top: 0px;
+		left: 338px;
 	}
 		
 	

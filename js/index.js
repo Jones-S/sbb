@@ -1,7 +1,7 @@
 console.log("hey there");
 
 $( "#content-big" ).hide();
-$( "#via" ).hide();
+/* $( "#via" ).hide(); */
 
 var active_tab = "klasse"; //active tab as string
 
@@ -30,8 +30,10 @@ var click_tab = function ( event ) {
 	switch (active_tab) {
 	  case "vonnach":
 	    console.log("vonnach");
-	    $('.tab.' + active_tab).siblings().removeClass('active');
+	   /*
+ $('.tab.' + active_tab).siblings().removeClass('active');
 	    $('.tab.' + active_tab).addClass('active');
+*/
 	
 	    
 	    break;

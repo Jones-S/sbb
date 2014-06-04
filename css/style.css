@@ -1,3 +1,4 @@
+@import url(../css/via.css);
 * {
   padding: 0;
   margin: 0;
@@ -147,8 +148,7 @@ sidebar {
 
 #content {
   position: relative;
-  /* 	top: -709px; */
-  float: left; }
+  top: -709px; }
   #content section#vonnach {
     width: 620px;
     height: 643px;
@@ -212,6 +212,10 @@ sidebar {
       #content section#vonnach .schnellauswahl a.button:hover {
         background-color: #3f444d;
         -webkit-tap-highlight-color: transparent; }
+  #content section#via {
+    position: relative;
+    top: 0px;
+    left: 338px; }
 
 #content-big {
   float: left;

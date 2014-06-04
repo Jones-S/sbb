@@ -38,6 +38,12 @@ module.exports = function (grunt) {
 	         	src: 'tpl/zielaendern.tpl.html',
 	         	dest: 'tpl/zielaendern_processed.tpl.html',
          	},
+         	
+         	removeprocess2: {
+	         	src: 'tpl/via.tpl.html',
+	         	dest: 'tpl/via_processed.tpl.html',
+         	},
+
          
             options: {
                 beautify: true,
@@ -46,7 +52,7 @@ module.exports = function (grunt) {
                     layout: {
                         vonnach: 'tpl/vonnach.tpl.html',
                         zielaendern: 'tpl/zielaendern_processed.tpl.html',
-                        via: 'tpl/via.tpl.html',
+                        via: 'tpl/via_processed.tpl.html',
                         tickets: 'tpl/anzahl-tickets.tpl.html',
                         klasse: 'tpl/klasse.tpl.html',
                     }
