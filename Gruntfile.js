@@ -40,8 +40,8 @@ module.exports = function (grunt) {
          	},
          	
          	removeprocess2: {
-	         	src: 'tpl/via.tpl.html',
-	         	dest: 'tpl/via_processed.tpl.html',
+	         	src: 'tpl/via_jonas.tpl.html',
+	         	dest: 'tpl/via_jonas_processed.tpl.html',
          	},
          	
          	removeprocess3: {
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
                     layout: {
                         vonnach: 'tpl/vonnach_processed.tpl.html',
                         zielaendern: 'tpl/zielaendern_processed.tpl.html',
-                        via: 'tpl/via_processed.tpl.html',
+                        via: 'tpl/via_jonas_processed.tpl.html',
                         tickets: 'tpl/anzahl-tickets_processed.tpl.html',
                         klasse: 'tpl/klasse.tpl.html',
                     }

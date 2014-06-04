@@ -110,7 +110,7 @@
             <section id="vonnach">
 
                 <h1 class="bold">Wohin reisen Sie?</h1>
-                <section class="start_ziel">
+                <div class="start_ziel">
                     <div class="enterstart">
                         <p>Von</p>
                         <div class="buttoncontainer">
@@ -126,10 +126,10 @@
                             <a class="button ziel" href="#">Ziel ändern</a>
                         </div>
                     </div>
-                </section>
+                </div>
                 <!-- start_ziel -->
 
-                <section class="schnellauswahl">
+                <div class="schnellauswahl">
                     <h2>Schnellauswahl</h2>
                     <h2 class="bold">Billette ab Zürich</h2>
 
@@ -139,7 +139,7 @@
                     <a href="#" class="button schnellwahl">St. Gallen</a>
                     <a href="#" class="button schnellwahl">Winterthur</a>
 
-                </section>
+                </div>
                 <!-- schnellauswahl -->
 
             </section>
@@ -150,16 +150,13 @@
             <section id="via">
 
                 <h1 class="bold">Welche Reiseroute wählen Sie?</h1>
-                <dl class="accordion">
-                    <dt>
-			<div class="buttoncontainer">
-				<a class="button via" href="#">Via Weinfelden</a>
-				<a class="button via-info" href="#"></a>
-			</div>
-		</dt>
-
-                    <dd>
-                        <table border="1">
+                <ul class="accordion">
+                    <li>
+                        <div class="buttoncontainer">
+                            <a class="button via" href="#">Via Weinfelden</a>
+                            <a class="button via-info" href="#"></a>
+                        </div>
+                        <table class="timetable">
                             <tr>
                                 <td colspan="5"><b>Fahrplan</b>(dient nur als Information)</td>
                             </tr>
@@ -187,55 +184,43 @@
                                 <td>S 14</td>
                             </tr>
                         </table>
-                    </dd>
-                </dl>
+                    </li>
+                </ul>
+            </section>
 
 
 
 
-                <script type="text/javascript">
-                    (function($) {
-                        var slider = $('.accordion > dd').hide();
-                        $('.accordion > dt > .buttoncontainer > a.via-info').click(function() {
-                            slider.slideUp();
-                            $(this).parent().next().slideDown();
-                            return false;
-                        });
-                    })(jQuery);
-                </script>
+
+            <section id="tickets">
+
+                <h1 class="bold">Wählen Sie ihre Anzahl Tickets.</h1>
+                <h2 class="bold">Halbtax, Kinder (bis 16 Jahre)</h2>
+
+                <div class="counterwrap">
+                    <a href="#" class="counter">1</a> 
+                </div>
+
+                <div class="buttonwrap">
+                    <a href="#" class="button">+</a>
+                    <a href="#" class="button">-</a>	
+                </div>
 
 
 
+                <h2 class="bold">Halbtax, Kinder (bis 16 Jahre)</h2>
 
-                <section id="tickets">
+                <div class="counterwrap">
+                    <a href="#" class="counter">1</a> 
+                </div>
 
-                    <h1 class="bold">Wählen Sie ihre Anzahl Tickets.</h1>
-                    <h2 class="bold">Halbtax, Kinder (bis 16 Jahre)</h2>
-
-                    <div class="counterwrap">
-                        <a href="#" class="counter">1</a> 
-                    </div>
-
-                    <div class="buttonwrap">
-                        <a href="#" class="button">+</a>
-                        <a href="#" class="button">-</a>	
-                    </div>
+                <div class="buttonwrap">
+                    <a href="#" class="button"> +</a>
+                    <a href="#" class="button">-</a>	
+                </div>
 
 
-
-                    <h2 class="bold">Halbtax, Kinder (bis 16 Jahre)</h2>
-
-                    <div class="counterwrap">
-                        <a href="#" class="counter">1</a> 
-                    </div>
-
-                    <div class="buttonwrap">
-                        <a href="#" class="button"> +</a>
-                        <a href="#" class="button">-</a>	
-                    </div>
-
-
-                </section>
+            </section>
 
 
 

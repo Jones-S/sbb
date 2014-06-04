@@ -25,16 +25,13 @@
 <section id="via">
 
 	<h1 class="bold">Welche Reiseroute wählen Sie?</h1>
-	<dl class="accordion">
-		<dt>
+	<ul class="accordion">
+		<li>
 			<div class="buttoncontainer">
 				<a class="button via" href="#">Via Weinfelden</a>
 				<a class="button via-info" href="#"></a>
 			</div>
-		</dt>
-		
-		<dd>
-			<table border="1">
+			<table class="timetable">
 			<tr><td colspan="5"><b>Fahrplan</b>(dient nur als Information)</td></tr> 
 			  <tr>
 			    <th>Ankunft</th>
@@ -60,27 +57,16 @@
 			    <td>S 14</td>
 			  </tr>
 			</table>
-		</dd>
-	</dl>
-	
-	
-	
-	
-<script type="text/javascript">
-(function($) {
-var slider = $('.accordion > dd').hide();
- $('.accordion > dt > .buttoncontainer > a.via-info').click(function() {
-    slider.slideUp();
-    $(this).parent().next().slideDown();
-    return false;
-  });
-})(jQuery);
+		</li>
+	</ul>
+</section>
 
-</script>
 
 
 <!-- build:remove -->
 	</div>
+	<script type="text/javascript" src="../js/index.js"></script>
+
 	</body>
 	</html>
 <!-- /build -->

@@ -218,31 +218,38 @@ sidebar {
     top: 0px;
     left: 338px; }
     #content section#via a.button {
-      line-height: 60px;
-      padding-left: 15px;
       color: white;
-      margin-bottom: 7px;
-      height: 60px; }
+      margin-bottom: 7px; }
       #content section#via a.button:hover {
         background-color: #3f444d;
         -webkit-tap-highlight-color: transparent; }
     #content section#via a.button.via {
-      width: 556px;
-      -moz-border-radius-topright: 0 0;
+      border-radius: 4px 4px;
       border-top-right-radius: 0 0;
-      -moz-border-radius-bottomright: 0 0;
-      border-bottom-right-radius: 0 0; }
-    #content section#via a.button.via.info {
+      border-bottom-right-radius: 0 0;
+      padding: 0px 15px 0px 15px;
+      line-height: 60px;
+      width: 528px;
+      float: left;
+      margin-right: 1px; }
+    #content section#via a.button.via-info {
       height: 60px;
       width: 60px;
       display: block;
-      background: #6b7786 url("../img/icons/info.png") no-repeat left center;
-      float: left; }
+      background: #6b7786 url("../img/icons/info.png") no-repeat left 8px center;
+      float: left;
+      border-top-left-radius: 0 0;
+      border-bottom-left-radius: 0 0; }
+      #content section#via a.button.via-info:hover {
+        background-color: #3f444d;
+        -webkit-tap-highlight-color: transparent; }
     #content section#via .buttoncontainer:before, #content section#via .buttoncontainer:after {
       content: " ";
       display: table; }
     #content section#via .buttoncontainer:after {
       clear: both; }
+    #content section#via table {
+      background-color: white; }
 
 #content-big {
   float: left;
