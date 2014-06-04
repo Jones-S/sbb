@@ -149,12 +149,13 @@
 
             <section id="via">
 
-                <h1 class="bold">Welche Reiserute möchten Sie wählen?</h1>
+                <h1 class="bold">Welche Reiseroute wählen Sie?</h1>
                 <dl class="accordion">
                     <dt>
-	<a class="cmd" href="#1">Via Weinfelden</a>
-	<a class="cmd_info" id="hh" href="#1"><img src="images/info_icon.png" alt="i."></a>
-</dt>
+			<a class="button via" href="#1">Via Weinfelden</a>
+			<a class="button via-info" href="#1"><img src="images/info_icon.png" alt="i."></a>
+		</dt>
+
                     <dd>
                         <table border="1">
                             <tr>
@@ -185,15 +186,18 @@
                             </tr>
                         </table>
                     </dd>
-                    <dt>
+                </dl>
+                <!--
+<dt>
 	<a class="cmd" href="#1">Andere Reiseroute</a>
 	<a class="cmd_info" id="hh" href="#1"><img src="images/info_icon.png" alt="i."> </a>
 </dt>
-                    <dd>
+-->
+                <!--
+<dd>
 
-                        <table border="1">
-                            <tr>
-                                <td colspan="5"><b>Information zu andere Reiseroute</td></tr> 
+<table border="1">
+<tr><td colspan="5"><b>Information zu andere Reiseroute</td></tr> 
   <tr>
     <td>
 	Hilfe TEXT Hilfe TEXT Hilfe TEXT Hilfe TEXT
@@ -203,93 +207,95 @@
 
 </table>
 </dd>
+-->
 
 
-<script type="text/javascript">
-(function($) {
-var slider = $('.accordion > dd').hide();
- $('.accordion > dt > a#hh').click(function() {
-    slider.slideUp();
-    $(this).parent().next().slideDown();
-    return false;
-  });
-})(jQuery);
-
-</script>
-
-
-
-		
-<section id="tickets">
-
-    <h1 class="bold">Wählen Sie ihre Anzahl Tickets.</h1>
-    <h2 class="bold">Halbtax, Kinder (bis 16 Jahre)</h2>
-
-    <div class="counterwrap">
-        <a href="#" class="counter">1</a> 
-    </div>
-
-    <div class="buttonwrap">
-        <a href="#" class="button">+</a>
-        <a href="#" class="button">-</a>	
-    </div>
+                <script type="text/javascript">
+                    (function($) {
+                        var slider = $('.accordion > dd').hide();
+                        $('.accordion > dt > a.via-info').click(function() {
+                            slider.slideUp();
+                            $(this).parent().next().slideDown();
+                            return false;
+                        });
+                    })(jQuery);
+                </script>
 
 
 
-    <h2 class="bold">Halbtax, Kinder (bis 16 Jahre)</h2>
 
-    <div class="counterwrap">
-        <a href="#" class="counter">1</a> 
-    </div>
+                <section id="tickets">
 
-    <div class="buttonwrap">
-        <a href="#" class="button"> +</a>
-        <a href="#" class="button">-</a>	
-    </div>
+                    <h1 class="bold">Wählen Sie ihre Anzahl Tickets.</h1>
+                    <h2 class="bold">Halbtax, Kinder (bis 16 Jahre)</h2>
+
+                    <div class="counterwrap">
+                        <a href="#" class="counter">1</a> 
+                    </div>
+
+                    <div class="buttonwrap">
+                        <a href="#" class="button">+</a>
+                        <a href="#" class="button">-</a>	
+                    </div>
 
 
-</section>
+
+                    <h2 class="bold">Halbtax, Kinder (bis 16 Jahre)</h2>
+
+                    <div class="counterwrap">
+                        <a href="#" class="counter">1</a> 
+                    </div>
+
+                    <div class="buttonwrap">
+                        <a href="#" class="button"> +</a>
+                        <a href="#" class="button">-</a>	
+                    </div>
+
+
+                </section>
 
 
 
-		
-		
-		
-			
-	</div>
-	
-	<div id="content-big">
-<section id="zielaendern">
-    <section class="zieleingabe">
-        <a href="#" class="button zurueck">Zurück</a>
-        <hr class="clear" />
 
-        <p>Nach</p>
-        <input class="regular" type="text" value="" name="Ziel" />
-        <div class="button-holder">
-            <ul>
-                <li><a class="button vorschlag" href="#">Kreuzberg</a>
-                </li>
-                <li><a class="button vorschlag" href="#">Rotkreuz</a>
-                </li>
-                <li><a class="button vorschlag" href="#">Kreuzlingen</a>
-                </li>
-            </ul>
+
+
+
         </div>
-    </section>
 
-    <section class="keyboard">
-        <img src="../img/keyboard.png" alt="keyboard" />
-    </section>
-</section>
+        <div id="content-big">
+            <section id="zielaendern">
+                <section class="zieleingabe">
+                    <a href="#" class="button zurueck">Zurück</a>
+                    <hr class="clear" />
 
-	</div>
-	
-	
-    
+                    <p>Nach</p>
+                    <input class="regular" type="text" value="" name="Ziel" />
+                    <div class="button-holder">
+                        <ul>
+                            <li><a class="button vorschlag" href="#">Kreuzberg</a>
+                            </li>
+                            <li><a class="button vorschlag" href="#">Rotkreuz</a>
+                            </li>
+                            <li><a class="button vorschlag" href="#">Kreuzlingen</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="keyboard">
+                    <img src="../img/keyboard.png" alt="keyboard" />
+                </section>
+            </section>
+
+        </div>
 
 
-</div> <!-- container -->
-<script type="text/javascript" src="js/index.js"></script>
+
+
+
+    </div>
+    <!-- container -->
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
+
 </html>

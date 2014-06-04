@@ -7,8 +7,9 @@
 	  	<meta name="keywords" content="" />
 		<meta name="robots" content="" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<link rel="stylesheet" href="../css/via.css" type="text/css" />
-		
+		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 		<style type="text/css">
 			#via {
 				background-color: #ebebeb;
@@ -18,48 +19,54 @@
 	<html>
 	<body ontouchstart="">
 	<div id="content">
+
 <!-- /build -->
 
 <section id="via">
 
-	<h1 class="bold">Welche Reiserute möchten Sie wählen?</h1>
+	<h1 class="bold">Welche Reiseroute wählen Sie?</h1>
 	<dl class="accordion">
-<dt>
-	<a class="cmd" href="#1">Via Weinfelden</a>
-	<a class="cmd_info" id="hh" href="#1"><img src="images/info_icon.png" alt="i."></a>
-</dt>
-<dd>
-<table border="1">
-<tr><td colspan="5"><b>Fahrplan</b>(dient nur als Information)</td></tr> 
-  <tr>
-    <th>Ankunft</th>
-    <th>Abfahrt</th>
-    <th>Umst.</th>
-    <th>Gleis</th>
-    <th>Zug</th>
-  </tr>
- 
- <tr>
-    <td>14:30</td>
-    <td>15:30</td>
-    <td>0</td>
-    <td>15</td>
-     <td>IC</td>
-  </tr>
- 
-  <tr>
-    <td>15:30</td>
-    <td>16:30</td>
-    <td>3</td>
-    <td>16</td>
-    <td>S 14</td>
-  </tr>
-</table>
-</dd>
+		<dt>
+			<a class="button via" href="#1">Via Weinfelden</a>
+			<a class="button via-info" href="#1"><img src="images/info_icon.png" alt="i."></a>
+		</dt>
+		
+		<dd>
+			<table border="1">
+			<tr><td colspan="5"><b>Fahrplan</b>(dient nur als Information)</td></tr> 
+			  <tr>
+			    <th>Ankunft</th>
+			    <th>Abfahrt</th>
+			    <th>Umst.</th>
+			    <th>Gleis</th>
+			    <th>Zug</th>
+			  </tr>
+			 
+			 <tr>
+			    <td>14:30</td>
+			    <td>15:30</td>
+			    <td>0</td>
+			    <td>15</td>
+			     <td>IC</td>
+			  </tr>
+			 
+			  <tr>
+			    <td>15:30</td>
+			    <td>16:30</td>
+			    <td>3</td>
+			    <td>16</td>
+			    <td>S 14</td>
+			  </tr>
+			</table>
+		</dd>
+	</dl>
+<!--
 <dt>
 	<a class="cmd" href="#1">Andere Reiseroute</a>
 	<a class="cmd_info" id="hh" href="#1"><img src="images/info_icon.png" alt="i."> </a>
 </dt>
+-->
+<!--
 <dd>
 
 <table border="1">
@@ -73,12 +80,13 @@
 
 </table>
 </dd>
+-->
 
 
 <script type="text/javascript">
 (function($) {
 var slider = $('.accordion > dd').hide();
- $('.accordion > dt > a#hh').click(function() {
+ $('.accordion > dt > a.via-info').click(function() {
     slider.slideUp();
     $(this).parent().next().slideDown();
     return false;

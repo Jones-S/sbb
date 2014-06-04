@@ -227,9 +227,7 @@ sidebar {
 #content {
 	position: relative;
 /* 	top: -709px; */
-
-
-	section#vonnach {
+	section {
 		$padding2: 33px;
 		width: 1024px - 338px - 2*$padding2;
 		height: 709px - 2*$padding2;
@@ -241,6 +239,10 @@ sidebar {
 			color: #576374;
 			margin-bottom: 30px;
 		}
+	}
+
+	section#vonnach {
+		
 		
 		.start_ziel {
 			margin-bottom: 30px;
@@ -330,7 +332,27 @@ sidebar {
 		position: relative;
 		top: 0px;
 		left: 338px;
+		
+		a.button {
+			line-height: 60px;
+			padding-left: 15px;
+			color: white;
+			display: block;
+			margin-bottom: 7px;
+			
+			&:hover {
+				background-color: $sbb-grau2;
+				-webkit-tap-highlight-color: rgba(0,0,0,0);	
+			}
+			
+		}
+		
+		a.button.via {
+			width: 650px;
+		}
 	}
+	
+	
 		
 	
 }
