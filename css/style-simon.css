@@ -278,7 +278,7 @@ sidebar {
   font-weight: 400; }
   
   
-  /* ---------------sektion Simon*/
+  /* ---------------sektion Simon-a*/
   
   #content section#klasse {
     width: 620px;
@@ -290,19 +290,32 @@ sidebar {
       font-size: 30px;
       color: #576374;
       margin-bottom: 30px; }
+        
       
   #content section#klasse a.button {
       line-height: 60px;
-      padding-left: 15px;
+      padding-left: 80px;
       color: white;
       display: block;
-      width:200px;
+      width:130px;
       margin-left:0px;
-      margin-bottom: 7px; }
+      margin-bottom: 7px;
+  }
+  
+  .ersteklasse {
+	  background:#576374 url("../img/icons/1klasse.png") no-repeat left 10px top 10px;
+	  background-size: 40px;
+  }
+  
+  .zweiteklasse {
+	  background:#576374 url("../img/icons/2klasse.png")  no-repeat left 10px top 10px;
+	  background-size: 40px;
+  }
+      
       
   #content section#klasse a.button:hover {
         background-color: #3f444d;
         -webkit-tap-highlight-color: transparent; }
-  
+        
   
   
