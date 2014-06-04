@@ -107,85 +107,217 @@
 
 
 
+            <!-- build:remove -->
+            <html lang="">
+
+            <head>
+                <meta charset="utf-8">
+                <title></title>
+                <meta name="description" content="" />
+                <meta name="keywords" content="" />
+                <meta name="robots" content="" />
+                <meta name="apple-mobile-web-app-capable" content="yes" />
+                <link rel="stylesheet" href="../css/style.css" type="text/css" />
+                <style type="text/css">
+                    #vonnach {
+                        background-color: #ebebeb;
+                    }
+                </style>
+            </head>
+            <html>
+
+            <body ontouchstart="">
+                <div id="content">
+                    <!-- /build -->
+
+                    <section id="vonnach">
+
+                        <h1 class="bold">Wohin reisen Sie?</h1>
+                        <section class="start_ziel">
+                            <div class="enterstart">
+                                <p>Von</p>
+                                <div class="buttoncontainer">
+                                    <input class="regular" type="text" value="Zürich HB" name="Start" />
+                                    <a class="button start" href="#">Start ändern</a>
+                                </div>
+                            </div>
+                            <hr class="clear" />
+                            <div class="enterdestination">
+                                <p>Nach</p>
+                                <div class="buttoncontainer">
+                                    <input class="regular" type="text" value="" name="Ziel" />
+                                    <a class="button ziel" href="#">Ziel ändern</a>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- start_ziel -->
+
+                        <section class="schnellauswahl">
+                            <h2>Schnellauswahl</h2>
+                            <h2 class="bold">Billette ab Zürich</h2>
+
+                            <a href="#" class="button schnellwahl">Basel</a>
+                            <a href="#" class="button schnellwahl">Luzern</a>
+                            <a href="#" class="button schnellwahl">Olten</a>
+                            <a href="#" class="button schnellwahl">St. Gallen</a>
+                            <a href="#" class="button schnellwahl">Winterthur</a>
+
+                        </section>
+                        <!-- schnellauswahl -->
+
+                    </section>
+                    <!-- vonnach -->
+
+                    <!-- build:remove -->
+                </div>
+            </body>
+
+            </html>
+            <!-- /build -->
+
+            <section id="via">
+
+                <h1 class="bold">Welche Reiserute möchten Sie wählen?</h1>
+                <dl class="accordion">
+                    <dt>
+	<a class="cmd" href="#1">Via Weinfelden</a>
+	<a class="cmd_info" id="hh" href="#1"><img src="images/info_icon.png" alt="i."></a>
+</dt>
+                    <dd>
+                        <table border="1">
+                            <tr>
+                                <td colspan="5"><b>Fahrplan</b>(dient nur als Information)</td>
+                            </tr>
+                            <tr>
+                                <th>Ankunft</th>
+                                <th>Abfahrt</th>
+                                <th>Umst.</th>
+                                <th>Gleis</th>
+                                <th>Zug</th>
+                            </tr>
+
+                            <tr>
+                                <td>14:30</td>
+                                <td>15:30</td>
+                                <td>0</td>
+                                <td>15</td>
+                                <td>IC</td>
+                            </tr>
+
+                            <tr>
+                                <td>15:30</td>
+                                <td>16:30</td>
+                                <td>3</td>
+                                <td>16</td>
+                                <td>S 14</td>
+                            </tr>
+                        </table>
+                    </dd>
+                    <dt>
+	<a class="cmd" href="#1">Andere Reiseroute</a>
+	<a class="cmd_info" id="hh" href="#1"><img src="images/info_icon.png" alt="i."> </a>
+</dt>
+                    <dd>
+
+                        <table border="1">
+                            <tr>
+                                <td colspan="5"><b>Information zu andere Reiseroute</td></tr> 
+  <tr>
+    <td>
+	Hilfe TEXT Hilfe TEXT Hilfe TEXT Hilfe TEXT
+	 Hilfe TEXT Hilfe TEXT Hilfe TEXT Hilfe TEXT	    
+    </td>
+  </tr>
+
+</table>
+</dd>
 
 
-            <section id="klasse">
+<script type="text/javascript">
+(function($) {
+var slider = $('.accordion > dd').hide();
+ $('.accordion > dt > a#hh').click(function() {
+    slider.slideUp();
+    $(this).parent().next().slideDown();
+    return false;
+  });
+})(jQuery);
 
-                <section id="tickets">
-
-                    <h1 class="bold">Wählen Sie ihre Anzahl Tickets.</h1>
-                    <h2 class="bold">Halbtax, Kinder (bis 16 Jahre)</h2>
-
-                    <div class="counterwrap">
-                        <a href="#" class="counter">1</a> 
-                    </div>
-
-                    <div class="buttonwrap">
-                        <a href="#" class="button"> +</a>
-                        <a href="#" class="button">-</a>	
-                    </div>
+</script>
 
 
 
-                    <h2 class="bold">Halbtax, Kinder (bis 16 Jahre)</h2>
+		
+<section id="tickets">
 
-                    <div class="counterwrap">
-                        <a href="#" class="counter">1</a> 
-                    </div>
+    <h1 class="bold">Wählen Sie ihre Anzahl Tickets.</h1>
+    <h2 class="bold">Halbtax, Kinder (bis 16 Jahre)</h2>
 
-                    <div class="buttonwrap">
-                        <a href="#" class="button"> +</a>
-                        <a href="#" class="button">-</a>	
-                    </div>
-
-
-                </section>
-
-
-            </section>
-            <!-- klasse -->
-
-
-
-
-
-
-        </div>
-
-        <div id="content-big">
-            <section id="zielaendern">
-                <section class="zieleingabe">
-                    <a href="#" class="button zurueck">Zurück</a>
-                    <hr class="clear" />
-
-                    <p>Nach</p>
-                    <input class="regular" type="text" value="" name="Ziel" />
-                    <div class="button-holder">
-                        <ul>
-                            <li><a class="button vorschlag" href="#">Kreuzberg</a>
-                            </li>
-                            <li><a class="button vorschlag" href="#">Rotkreuz</a>
-                            </li>
-                            <li><a class="button vorschlag" href="#">Kreuzlingen</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section class="keyboard">
-                    <img src="../img/keyboard.png" alt="keyboard" />
-                </section>
-            </section>
-
-        </div>
-
-
-
-
-
+    <div class="counterwrap">
+        <a href="#" class="counter">1</a> 
     </div>
-    <!-- container -->
-    <script type="text/javascript" src="js/index.js"></script>
-</body>
 
+    <div class="buttonwrap">
+        <a href="#" class="button">+</a>
+        <a href="#" class="button">-</a>	
+    </div>
+
+
+
+    <h2 class="bold">Halbtax, Kinder (bis 16 Jahre)</h2>
+
+    <div class="counterwrap">
+        <a href="#" class="counter">1</a> 
+    </div>
+
+    <div class="buttonwrap">
+        <a href="#" class="button"> +</a>
+        <a href="#" class="button">-</a>	
+    </div>
+
+
+</section>
+
+
+
+		
+		
+		
+			
+	</div>
+	
+	<div id="content-big">
+<section id="zielaendern">
+    <section class="zieleingabe">
+        <a href="#" class="button zurueck">Zurück</a>
+        <hr class="clear" />
+
+        <p>Nach</p>
+        <input class="regular" type="text" value="" name="Ziel" />
+        <div class="button-holder">
+            <ul>
+                <li><a class="button vorschlag" href="#">Kreuzberg</a>
+                </li>
+                <li><a class="button vorschlag" href="#">Rotkreuz</a>
+                </li>
+                <li><a class="button vorschlag" href="#">Kreuzlingen</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="keyboard">
+        <img src="../img/keyboard.png" alt="keyboard" />
+    </section>
+</section>
+
+	</div>
+	
+	
+    
+
+
+</div> <!-- container -->
+<script type="text/javascript" src="js/index.js"></script>
+</body>
 </html>
