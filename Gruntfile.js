@@ -45,8 +45,8 @@ module.exports = function (grunt) {
          	},
          	
          	removeprocess3: {
-	         	src: 'tpl/anzahl-tickets.tpl.html',
-	         	dest: 'tpl/anzahl-tickets_processed.tpl.html',
+	         	src: 'tpl/tickets.tpl.html',
+	         	dest: 'tpl/tickets_processed.tpl.html',
          	},
          	
          	removeprocess4: {
@@ -63,8 +63,11 @@ module.exports = function (grunt) {
                         vonnach: 'tpl/vonnach_processed.tpl.html',
                         zielaendern: 'tpl/zielaendern_processed.tpl.html',
                         via: 'tpl/via_jonas_processed.tpl.html',
-                        tickets: 'tpl/anzahl-tickets_processed.tpl.html',
+                        datum: 'tpl/datum.tpl.html',
+                        einfachretour: 'tpl/einfachretour.tpl.html',
                         klasse: 'tpl/klasse.tpl.html',
+                        tickets: 'tpl/tickets_processed.tpl.html',
+                        preis: 'tpl/preis.tpl.html',
                     }
                 }
             },
