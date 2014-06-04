@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
   width: 1024px;
   height: 768px;
-  overflow: hidden;
+  /* 	overflow: hidden; */
   background-color: #ebebeb; }
 
 hr.clear {
@@ -80,7 +80,8 @@ sidebar {
   width: 338px;
   height: 710px;
   display: block;
-  float: left; }
+  float: left;
+  clear: both; }
   sidebar ul img.active_triangle {
     position: relative;
     float: right;
@@ -132,119 +133,140 @@ sidebar {
     sidebar ul .preis .chf {
       font-size: 46px; }
 
-#content section#vonnach {
-  width: 620px;
-  height: 643px;
-  float: left;
-  padding: 33px; }
-  #content section#vonnach h1 {
-    font-size: 30px;
-    color: #576374;
-    margin-bottom: 30px; }
-  #content section#vonnach .start_ziel {
-    margin-bottom: 30px;
-    /* CLEARFIX */ }
-    #content section#vonnach .start_ziel p {
-      margin-bottom: 3px; }
-    #content section#vonnach .start_ziel .buttoncontainer:before, #content section#vonnach .start_ziel .buttoncontainer:after {
-      content: " ";
-      display: table; }
-    #content section#vonnach .start_ziel .buttoncontainer:after {
-      clear: both; }
-    #content section#vonnach .start_ziel input {
+.sidebar-out {
+  position: relative;
+  left: -340px; }
+
+#content {
+  position: relative;
+  /* 	top: -709px; */
+  float: left; }
+  #content section#vonnach {
+    width: 620px;
+    height: 643px;
+    /* 		float: left; */
+    padding: 33px; }
+    #content section#vonnach h1 {
       font-size: 30px;
-      -moz-border-radius: 4px 4px;
-      border-radius: 4px 4px;
-      -moz-border-radius-topright: 0 0;
-      border-top-right-radius: 0 0;
-      -moz-border-radius-bottomright: 0 0;
-      border-bottom-right-radius: 0 0;
-      padding: 5px 15px 5px 15px;
-      line-height: 30px;
-      width: 434px;
-      float: left; }
-    #content section#vonnach .start_ziel a.start, #content section#vonnach .start_ziel a.ziel {
-      background-color: #ed1c24;
-      font-size: 19px;
-      line-height: 36px;
-      -moz-border-radius-topleft: 0 0;
-      border-top-left-radius: 0 0;
-      -moz-border-radius-bottomleft: 0 0;
-      border-bottom-left-radius: 0 0;
-      padding: 5px 15px 5px 15px;
-      color: white;
-      width: 120px;
-      position: relative;
-      text-align: center;
-      float: left; }
-      #content section#vonnach .start_ziel a.start:hover, #content section#vonnach .start_ziel a.ziel:hover {
-        background-color: #b20000;
-        -webkit-tap-highlight-color: transparent; }
-    #content section#vonnach .start_ziel .enterstart {
-      margin-bottom: 3px; }
-  #content section#vonnach .schnellauswahl h2 {
-    font-size: 23px; }
-  #content section#vonnach .schnellauswahl h2.bold {
-    margin-bottom: 15px; }
-  #content section#vonnach .schnellauswahl a.button {
-    line-height: 60px;
-    padding-left: 15px;
-    color: white;
-    display: block;
-    margin-bottom: 7px; }
-    #content section#vonnach .schnellauswahl a.button:hover {
-      background-color: #3f444d;
-      -webkit-tap-highlight-color: transparent; }
-#content section#zielaendern {
-  width: 958px;
-  height: 643px;
-  float: left;
-  padding: 33px; }
-  #content section#zielaendern .zieleingabe {
-    height: 430px; }
-    #content section#zielaendern .zieleingabe a.zurueck {
-      line-height: 36px;
-      padding: 5px 15px 5px 35px;
+      color: #576374;
+      margin-bottom: 30px; }
+    #content section#vonnach .start_ziel {
+      margin-bottom: 30px;
+      /* CLEARFIX */ }
+      #content section#vonnach .start_ziel p {
+        margin-bottom: 3px; }
+      #content section#vonnach .start_ziel .buttoncontainer:before, #content section#vonnach .start_ziel .buttoncontainer:after {
+        content: " ";
+        display: table; }
+      #content section#vonnach .start_ziel .buttoncontainer:after {
+        clear: both; }
+      #content section#vonnach .start_ziel input {
+        font-size: 30px;
+        -moz-border-radius: 4px 4px;
+        border-radius: 4px 4px;
+        -moz-border-radius-topright: 0 0;
+        border-top-right-radius: 0 0;
+        -moz-border-radius-bottomright: 0 0;
+        border-bottom-right-radius: 0 0;
+        padding: 5px 15px 5px 15px;
+        line-height: 30px;
+        width: 434px;
+        float: left; }
+      #content section#vonnach .start_ziel a.start, #content section#vonnach .start_ziel a.ziel {
+        background-color: #ed1c24;
+        font-size: 19px;
+        line-height: 36px;
+        -moz-border-radius-topleft: 0 0;
+        border-top-left-radius: 0 0;
+        -moz-border-radius-bottomleft: 0 0;
+        border-bottom-left-radius: 0 0;
+        padding: 5px 15px 5px 15px;
+        color: white;
+        width: 120px;
+        position: relative;
+        text-align: center;
+        float: left; }
+        #content section#vonnach .start_ziel a.start:hover, #content section#vonnach .start_ziel a.ziel:hover {
+          background-color: #b20000;
+          -webkit-tap-highlight-color: transparent; }
+      #content section#vonnach .start_ziel .enterstart {
+        margin-bottom: 3px; }
+    #content section#vonnach .schnellauswahl h2 {
+      font-size: 23px; }
+    #content section#vonnach .schnellauswahl h2.bold {
+      margin-bottom: 15px; }
+    #content section#vonnach .schnellauswahl a.button {
+      line-height: 60px;
+      padding-left: 15px;
       color: white;
       display: block;
-      margin-bottom: 7px;
-      width: intrinsic;
-      margin-bottom: 15px;
-      font-size: 19px;
-      background: #6b7786 url("../img/icons/arrow.png") no-repeat left 10px center; }
-      #content section#zielaendern .zieleingabe a.zurueck:hover {
+      margin-bottom: 7px; }
+      #content section#vonnach .schnellauswahl a.button:hover {
         background-color: #3f444d;
         -webkit-tap-highlight-color: transparent; }
-    #content section#zielaendern .zieleingabe input {
-      font-size: 30px;
-      -moz-border-radius: 4px 4px;
-      border-radius: 4px 4px;
-      padding: 5px 15px 5px 15px;
-      line-height: 30px;
-      width: 958px;
-      z-index: 10;
-      position: relative; }
-    #content section#zielaendern .zieleingabe .button-holder {
-      background-color: #f8f8f8;
-      padding: 15px;
-      position: relative;
-      top: -3px; }
-    #content section#zielaendern .zieleingabe ul li {
-      margin-top: 10px; }
-      #content section#zielaendern .zieleingabe ul li:first-child {
-        margin-top: 0; }
-      #content section#zielaendern .zieleingabe ul li a.vorschlag {
-        line-height: 60px;
-        padding-left: 15px;
+
+#content-big {
+  float: left;
+  clear: both;
+  position: relative;
+  top: -709px;
+  -webkit-transition: left 500ms ease-out 1s;
+  -moz-transition: left 500ms ease-out 1s;
+  -o-transition: all 500ms ease-out 1s;
+  transition: left 500ms ease-out 1s; }
+  #content-big section#zielaendern {
+    width: 955px;
+    height: 640px;
+    padding: 33px;
+    -webkit-transition: all 500ms ease-out 1s;
+    -moz-transition: all 500ms ease-out 1s;
+    -o-transition: all 500ms ease-out 1s;
+    transition: all 500ms ease-out 1s; }
+    #content-big section#zielaendern .zieleingabe {
+      height: 430px; }
+      #content-big section#zielaendern .zieleingabe a.zurueck {
+        line-height: 36px;
+        padding: 5px 15px 5px 35px;
         color: white;
-        display: block; }
-        #content section#zielaendern .zieleingabe ul li a.vorschlag:hover {
+        display: block;
+        margin-bottom: 7px;
+        width: intrinsic;
+        margin-bottom: 15px;
+        font-size: 19px;
+        background: #6b7786 url("../img/icons/arrow.png") no-repeat left 10px center; }
+        #content-big section#zielaendern .zieleingabe a.zurueck:hover {
           background-color: #3f444d;
           -webkit-tap-highlight-color: transparent; }
-  #content section#zielaendern .keyboard img {
-    margin: 0 auto;
-    display: table;
-    vertical-align: center; }
+      #content-big section#zielaendern .zieleingabe input {
+        font-size: 30px;
+        -moz-border-radius: 4px 4px;
+        border-radius: 4px 4px;
+        padding: 5px 15px 5px 15px;
+        line-height: 30px;
+        width: 925px;
+        z-index: 10;
+        position: relative; }
+      #content-big section#zielaendern .zieleingabe .button-holder {
+        background-color: #f8f8f8;
+        padding: 15px;
+        position: relative;
+        top: -3px; }
+      #content-big section#zielaendern .zieleingabe ul li {
+        margin-top: 10px; }
+        #content-big section#zielaendern .zieleingabe ul li:first-child {
+          margin-top: 0; }
+        #content-big section#zielaendern .zieleingabe ul li a.vorschlag {
+          line-height: 60px;
+          padding-left: 15px;
+          color: white;
+          display: block; }
+          #content-big section#zielaendern .zieleingabe ul li a.vorschlag:hover {
+            background-color: #3f444d;
+            -webkit-tap-highlight-color: transparent; }
+    #content-big section#zielaendern .keyboard img {
+      margin: 0 auto;
+      display: table;
+      vertical-align: center; }
 
 /* -------- FORMATTING */
 .bold {

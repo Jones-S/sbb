@@ -29,7 +29,7 @@ body {
 	margin:0 auto;
 	width: 1024px;
 	height: 768px;
-	overflow: hidden;
+/* 	overflow: hidden; */
 	background-color: #ebebeb;
 	
 }
@@ -119,6 +119,7 @@ sidebar {
 	height: 768px - 58px;
 	display: block;
 	float: left;
+	clear: both;
 	
 	ul {
 		img.active_triangle {
@@ -207,15 +208,22 @@ sidebar {
 
 	}
 }
-
+.sidebar-out {
+	position: relative;
+	left: - 340px;
+}
 
 #content {
+	position: relative;
+/* 	top: -709px; */
+	float: left;
+
 
 	section#vonnach {
 		$padding2: 33px;
 		width: 1024px - 338px - 2*$padding2;
 		height: 709px - 2*$padding2;
-		float: left;
+/* 		float: left; */
 		padding: $padding2;	
 		
 		h1 {
@@ -307,13 +315,31 @@ sidebar {
 		}
 		
 	}
+		
+	
+}
+
+#content-big {
+	float: left;
+	clear: both;
+	position: relative;
+	top: -709px;
+	-webkit-transition: left 500ms ease-out 1s;
+    -moz-transition: left 500ms ease-out 1s;
+    -o-transition: all 500ms ease-out 1s;
+    transition: left 500ms ease-out 1s;
+
 	
 	section#zielaendern {
+
 		$padding2: 33px;
-		width: 1024px - 2*$padding2;
-		height: 709px - 2*$padding2;
-		float: left;
+		width: 1024px - 2*$padding2 - 3px;
+		height: 709px - 2*$padding2 - 3px;
 		padding: $padding2;
+		-webkit-transition: all 500ms ease-out 1s;
+	    -moz-transition: all 500ms ease-out 1s;
+	    -o-transition: all 500ms ease-out 1s;
+	    transition: all 500ms ease-out 1s;
 		
 		.zieleingabe {
 			height: 430px;
@@ -341,7 +367,7 @@ sidebar {
 				border-radius: 4px 4px;
 				padding: 5px 15px 5px 15px;
 				line-height: 30px;
-				width: 958px;
+				width: 925px;
 				z-index: 10;
 				position: relative; //z-index works only for positioned elements
 			}
@@ -384,10 +410,6 @@ sidebar {
 		
 		
 	}
-	
-	
-	
-	
 }
 
 
