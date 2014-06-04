@@ -149,7 +149,7 @@ sidebar {
 
 #content {
   position: relative;
-  top: -709px; }
+  /* 	top: -709px; */ }
   #content section#vonnach {
     width: 620px;
     height: 643px;
@@ -222,7 +222,6 @@ sidebar {
   float: left;
   clear: both;
   position: relative;
-  top: -709px;
   -webkit-transition: left 500ms ease-out 1s;
   -moz-transition: left 500ms ease-out 1s;
   -o-transition: all 500ms ease-out 1s;

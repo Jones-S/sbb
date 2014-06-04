@@ -48,6 +48,11 @@ module.exports = function (grunt) {
 	         	src: 'tpl/anzahl-tickets.tpl.html',
 	         	dest: 'tpl/anzahl-tickets_processed.tpl.html',
          	},
+         	
+         	removeprocess4: {
+	         	src: 'tpl/vonnach.tpl.html',
+	         	dest: 'tpl/vonnach_processed.tpl.html',
+         	},
 
          
             options: {
@@ -55,7 +60,7 @@ module.exports = function (grunt) {
                 relative: true,
                 sections: {
                     layout: {
-                        vonnach: 'tpl/vonnach.tpl.html',
+                        vonnach: 'tpl/vonnach_processed.tpl.html',
                         zielaendern: 'tpl/zielaendern_processed.tpl.html',
                         via: 'tpl/via_processed.tpl.html',
                         tickets: 'tpl/anzahl-tickets_processed.tpl.html',

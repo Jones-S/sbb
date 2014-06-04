@@ -1,7 +1,7 @@
 console.log("hey there");
 
-$( "#content-big" ).hide();
-$( "#via" ).hide();
+/* $( "#content-big" ).hide(); */
+/* $( "#via" ).hide(); */
 
 var active_tab = "klasse"; //active tab as string
 
