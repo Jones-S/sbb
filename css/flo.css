@@ -1,0 +1,74 @@
+
+/* Wichtig ab hier*/
+
+table, th, td ,tr
+{
+border-collapse:collapse;
+text-align: left;
+border: 0px solid;
+width: 400px;
+height: auto;
+background-color: #ffffff;
+padding: 10px;
+vertical-align: middle;
+border-bottom: 3px solid #ebebeb;
+    border-top: 3px solid #ebebeb;
+    border-collapse: collapse;
+
+}
+
+
+
+
+.flo_list ul{
+	background-color: white;
+	
+}
+
+.flo_cmd{
+	height: 59px;
+	width: 60%;
+	
+	
+	margin-top: 7px;
+	margin-bottom: 7px;
+	margin-left: 2px;
+
+	vertical-align: middle;
+    text-decoration: none; 
+    font: menu;
+    display: inline-block; 
+    padding: 0px 10px;
+    background-color: #6b7786;
+    color: #ffffff;
+        
+}
+	
+.flo_cmd_info{
+	height: 59px;
+	width: 59px;
+	
+	margin-top: 7px;
+	margin-bottom: 7px;
+	margin-left: 2px;
+
+	vertical-align: middle;
+	text-align: center;
+    text-decoration: none; 
+   
+    display: inline-block; 
+    padding: 0px 10px;
+    background-color: #6b7786;
+    color: #ffffff;
+}
+flo_cmd_info img{
+vertical-align: middle;
+
+	
+}
+	
+.flo_cmd:active,
+.flo_cmd_info:active
+ {
+    background-color: #3f444d;
+}
