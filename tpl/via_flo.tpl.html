@@ -1,0 +1,159 @@
+
+
+<!-- build:remove -->
+	<html lang="">
+	<head>
+	  <meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="" />
+	  	<meta name="keywords" content="" />
+		<meta name="robots" content="" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+		<link rel="stylesheet" href="../css/style-simon.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../css/via.css">
+<link rel="stylesheet" type="text/css" href="../css/dataTables.jqueryui.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+
+<script src="../js/jquery-1.11.1.js"></script>
+<script src="../js/jquery.dataTables.js"></script>
+<script src="../js/jquery-ui.js"></script>
+
+		<style type="text/css">
+			#klasse {
+				background-color: #ebebeb;
+			}
+		</style>
+	</head>
+	<html>
+	<body ontouchstart="">
+	<div id="content">
+<!-- /build -->
+
+
+
+
+
+
+
+
+
+
+
+<!--#################################################-->
+<dl class="accordion">
+<dt>
+	<a class="cmd" href="#1">Via Weinfelden</a>
+	<a class="cmd_info" id="hh" href="#1"><img src="../img/icons/info.png" alt="i."></a>
+</dt>
+<dd>
+<table id="info" class="display">
+<thead>
+<tr><td colspan="5"><b>Fahrplan</b>(dient nur als Information)</td></tr> 
+  
+  <tr>
+    <th>Ankunft</th>
+    <th>Abfahrt</th>
+    <th>Umst.</th>
+    <th>Gleis</th>
+    <th>Zug</th>
+  </tr>
+  </thead>
+ 
+ <tbody>
+ <tr>
+    <td>14:30</td>
+    <td>15:30</td>
+    <td>0</td>
+    <td>15</td>
+     <td>IC</td>
+  </tr>
+ 
+  <tr>
+    <td>15:30</td>
+    <td>16:30</td>
+    <td>3</td>
+    <td>16</td>
+    <td>S 14</td>
+  </tr>
+  
+  <tr>
+    <td>16:30</td>
+    <td>17:30</td>
+    <td>4</td>
+    <td>12</td>
+    <td>S 11</td>
+  </tr>
+  <tr>
+    <td>17:30</td>
+    <td>18:30</td>
+    <td>33</td>
+    <td>11</td>
+    <td>S 9</td>
+  </tr>
+  <tr>
+    <td>19:30</td>
+    <td>20:30</td>
+    <td>31</td>
+    <td>11</td>
+    <td>S 4</td>
+  </tr>
+  <tbody>
+</table>
+
+
+</dd>
+
+<dt>
+	<a class="cmd" href="#1">Andere Reiseroute</a>
+	<a class="cmd_info" id="hh" href="#1"><img src="../img/icons/info.png" alt="i."> </a>
+</dt>
+<dd>
+<table border="0">
+<tr><td colspan="5"><b>Information zu andere Reiseroute</td></tr> 
+  <tr>
+    <td>
+	In dieser Option ist es möglich eine spezielle Rute zu fähren.
+		    
+    </td>
+  </tr>
+
+</table>
+</dd>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#info').dataTable({
+	 "paging":   false,
+	 "iDisplayLength": 5,
+	 "info": false,
+	 "order": [[ 0,"asc" ]], // erste spalte von klei nach groß -default
+	 "scrollY": "100px"
+	 
+    });
+    
+} );
+
+// ------------------Drop down ------------------
+
+
+(function($) {
+ var slider = $('.accordion > dd').hide();
+ $('.accordion > dt > a#hh').click(function() {
+    slider.slideUp();
+    $(this).parent().next().slideDown();
+    return false;
+  });
+})(jQuery);
+
+
+
+</script>
+<!--#################################################-->
+
+<!-- build:remove -->
+	</div>
+	</body>
+	</html>
+<!-- /build -->
