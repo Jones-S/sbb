@@ -152,8 +152,10 @@
                 <h1 class="bold">Welche Reiseroute wählen Sie?</h1>
                 <dl class="accordion">
                     <dt>
-			<a class="button via" href="#1">Via Weinfelden</a>
-			<a class="button via-info" href="#1"><img src="images/info_icon.png" alt="i."></a>
+			<div class="buttoncontainer">
+				<a class="button via" href="#">Via Weinfelden</a>
+				<a class="button via-info" href="#"></a>
+			</div>
 		</dt>
 
                     <dd>
@@ -187,33 +189,14 @@
                         </table>
                     </dd>
                 </dl>
-                <!--
-<dt>
-	<a class="cmd" href="#1">Andere Reiseroute</a>
-	<a class="cmd_info" id="hh" href="#1"><img src="images/info_icon.png" alt="i."> </a>
-</dt>
--->
-                <!--
-<dd>
 
-<table border="1">
-<tr><td colspan="5"><b>Information zu andere Reiseroute</td></tr> 
-  <tr>
-    <td>
-	Hilfe TEXT Hilfe TEXT Hilfe TEXT Hilfe TEXT
-	 Hilfe TEXT Hilfe TEXT Hilfe TEXT Hilfe TEXT	    
-    </td>
-  </tr>
 
-</table>
-</dd>
--->
 
 
                 <script type="text/javascript">
                     (function($) {
                         var slider = $('.accordion > dd').hide();
-                        $('.accordion > dt > a.via-info').click(function() {
+                        $('.accordion > dt > .buttoncontainer > a.via-info').click(function() {
                             slider.slideUp();
                             $(this).parent().next().slideDown();
                             return false;
