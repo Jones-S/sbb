@@ -46,6 +46,8 @@ module.exports = function (grunt) {
                     layout: {
                         vonnach: 'tpl/vonnach.tpl.html',
                         zielaendern: 'tpl/zielaendern_processed.tpl.html',
+                        via: 'tpl/via.tpl.html',
+                        tickets: 'anzahl-tickets.tpl.html',
                     }
                 }
             },
