@@ -47,8 +47,8 @@ module.exports = function (grunt) {
                         vonnach: 'tpl/vonnach.tpl.html',
                         zielaendern: 'tpl/zielaendern_processed.tpl.html',
                         via: 'tpl/via.tpl.html',
-                        tickets: 'anzahl-tickets.tpl.html',
-                        klasse: 'klasse.tpl.html',
+                        tickets: 'tpl/anzahl-tickets.tpl.html',
+                        klasse: 'tpl/klasse.tpl.html',
                     }
                 }
             },
