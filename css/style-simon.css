@@ -285,7 +285,8 @@ sidebar {
     height: 643px;
     /* 		float: left; */
     padding: 33px; }
-    #content section#klasse h1 {
+    
+  #content section#klasse h1 {
       font-size: 30px;
       color: #576374;
       margin-bottom: 30px; }
@@ -295,9 +296,11 @@ sidebar {
       padding-left: 15px;
       color: white;
       display: block;
-      width:300px;
+      width:200px;
+      margin-left:0px;
       margin-bottom: 7px; }
-      #content section#klasse a.button:hover {
+      
+  #content section#klasse a.button:hover {
         background-color: #3f444d;
         -webkit-tap-highlight-color: transparent; }
   
