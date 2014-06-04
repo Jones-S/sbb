@@ -210,7 +210,8 @@ sidebar {
       margin-bottom: 7px;
       width: intrinsic;
       margin-bottom: 15px;
-      font-size: 19px; }
+      font-size: 19px;
+      background: #6b7786 url("../img/icons/arrow.png") no-repeat left 10px center; }
       #content section#zielaendern .zieleingabe a.zurueck:hover {
         background-color: #3f444d;
         -webkit-tap-highlight-color: transparent; }
