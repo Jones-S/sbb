@@ -48,6 +48,7 @@ module.exports = function (grunt) {
                         zielaendern: 'tpl/zielaendern_processed.tpl.html',
                         via: 'tpl/via.tpl.html',
                         tickets: 'anzahl-tickets.tpl.html',
+                        klasse: 'klasse.tpl.html',
                     }
                 }
             },
