@@ -80,8 +80,16 @@ sidebar {
   width: 338px;
   height: 710px;
   display: block;
-  float: left;
-  clear: both; }
+  /*
+  	float: left;
+  	clear: both;
+  */
+  position: relative;
+  left: 0;
+  -webkit-transition: left 500ms ease-out 1s;
+  -moz-transition: left 500ms ease-out 1s;
+  -o-transition: all 500ms ease-out 1s;
+  transition: left 500ms ease-out 1s; }
   sidebar ul img.active_triangle {
     position: relative;
     float: right;

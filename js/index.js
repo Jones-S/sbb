@@ -3,7 +3,7 @@ console.log("hey there");
 $( "#content-big" ).hide();
 $( "#via" ).hide();
 
-var active_tab = "vonnach"; //active tab as string
+var active_tab = "klasse"; //active tab as string
 
 
 function clock() {
@@ -17,29 +17,6 @@ clock();
 
 
 /* switch case statement depending on active tab */
-switch (active_tab) {
-  case "vonnach":
-    console.log("vonnach");
-    $('.tab.' + active_tab).toggleClass('active');
-    $('.tab.' + active_tab).siblings.toggleClass('active');
-    
-    break;
-  case "via":
-    console.log("via");
-    break;
-  case "datum":
-    console.log("datum");
-    break;
-  case "einfachretour":
-    console.log("einfachretour");
-    break;
-  case "klasse":
-  	console.log("klasse");
-    break;
-  case "tickets":
-    console.log("tickets");
-    break;
-}
 
 
 
@@ -48,7 +25,33 @@ var click_tab = function ( event ) {
 	var $tab = $clicked_elem.closest( '.tablink' );
 	
 	var $link_name = $tab.attr('name');
-	console.log($link_name);
+	active_tab = $link_name;
+	
+	switch (active_tab) {
+	  case "vonnach":
+	    console.log("vonnach");
+	    $('.tab.' + active_tab).siblings().removeClass('active');
+	    $('.tab.' + active_tab).addClass('active');
+	
+	    
+	    break;
+	  case "via":
+	    console.log("via");
+	    break;
+	  case "datum":
+	    console.log("datum");
+	    break;
+	  case "einfachretour":
+	    console.log("einfachretour");
+	    break;
+	  case "klasse":
+	  	console.log("klasse");
+	    break;
+	  case "tickets":
+	    console.log("tickets");
+	    break;
+}
+
 }
 
 $( 'sidebar a' ).click( click_tab );
