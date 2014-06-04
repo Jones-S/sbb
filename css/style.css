@@ -32,7 +32,11 @@ hr.clear {
 .button {
   -moz-border-radius: 4px 4px;
   border-radius: 4px 4px;
-  background-color: #6b7786; }
+  background-color: #6b7786;
+  color: white; }
+  .button:hover {
+    background-color: #3f444d;
+    -webkit-tap-highlight-color: transparent; }
 
 header {
   background-color: white;
@@ -62,9 +66,6 @@ header {
     display: block;
     height: 38px;
     padding: 0 15px 0 15px; }
-    header .button:hover {
-      background-color: #3f444d;
-      -webkit-tap-highlight-color: transparent; }
     header .button p {
       line-height: 38px;
       color: white; }
@@ -82,10 +83,6 @@ sidebar {
   width: 338px;
   height: 710px;
   display: block;
-  /*
-  	float: left;
-  	clear: both;
-  */
   position: relative;
   left: 0;
   -webkit-transition: left 500ms ease-out 1s;
@@ -149,11 +146,12 @@ sidebar {
 
 #content {
   position: relative;
-  /* 	top: -709px; */ }
+  width: 686px;
+  top: -709px;
+  left: 338px; }
   #content section {
     width: 620px;
     height: 643px;
-    /* 		float: left; */
     padding: 33px; }
     #content section h1 {
       font-size: 30px;
@@ -210,18 +208,8 @@ sidebar {
     color: white;
     display: block;
     margin-bottom: 7px; }
-    #content section#vonnach .schnellauswahl a.button:hover {
-      background-color: #3f444d;
-      -webkit-tap-highlight-color: transparent; }
   #content section#via {
-    position: relative;
-    top: 0px;
-    left: 338px; }
-    #content section#via a.button {
-      color: white; }
-      #content section#via a.button:hover {
-        background-color: #3f444d;
-        -webkit-tap-highlight-color: transparent; }
+    position: relative; }
     #content section#via a.button.via {
       border-radius: 4px 4px;
       border-top-right-radius: 0 0;
@@ -263,10 +251,26 @@ sidebar {
           border-bottom: none; }
       #content section#via table .compressed td, #content section#via table .compressed th {
         height: 30px; }
+  #content section#datum .datumbuttonwrap {
+    margin-top: 20px; }
+  #content section#datum a.button {
+    display: block;
+    width: 295px;
+    line-height: 90px;
+    text-align: center;
+    float: left; }
+  #content section#datum .abheute {
+    margin-right: 20px; }
+  #content section#einfachretour a.button {
+    display: block;
+    width: 295px;
+    line-height: 90px;
+    text-align: center;
+    float: left; }
+  #content section#einfachretour .einfach {
+    margin-right: 20px; }
 
 #content-big {
-  float: left;
-  clear: both;
   position: relative;
   -webkit-transition: left 500ms ease-out 1s;
   -moz-transition: left 500ms ease-out 1s;

@@ -3,7 +3,15 @@ $( document ).ready(function(){
 	console.log("hey there");
 
 	/* $( "#content-big" ).hide(); */
-	/* $( "#via" ).hide(); */
+/* 	$( "#vonnach" ).hide(); */
+	$( "#via" ).hide();
+	$( "#datum" ).hide();
+	$( "#einfachretour" ).hide();
+	$( "#klasse" ).hide();
+	$( "#tickets" ).hide();
+	$( "#preis" ).hide();
+
+
 	
 	var active_tab = "klasse"; //active tab as string
 	
@@ -29,15 +37,35 @@ $( document ).ready(function(){
 		var $link_name = $tab.attr('name');
 		active_tab = $link_name;
 		
+		//on every click; remove all active classes and add it to the clicked tab
+		$('.tab.' + active_tab).siblings().removeClass('active');
+	    $('.tab.' + active_tab).addClass('active');
+	    
+	    //make all icons grey
+	    $('.tab img').each(function() {
+		    var $imgsrc = $( this ).attr('src');
+		    var newsrc = $imgsrc.replace("white", "grey");
+		    $( this ).attr('src', newsrc);
+		    console.log(newsrc);
+	    });
+	    
+	    // change icon -> get src as string replace grey > white
+		var $imgsrc = $('.tab.' + active_tab + ' img').attr('src');
+		var newsrc = $imgsrc.replace("grey", "white");
+	    $('.tab.' + active_tab + ' img').attr('src', newsrc);
+
+	    
+	    // hide all sections in content
+	    $('#content > section').hide();
+	    
+	    // show the section belonging to the clicked tab
+	    $('#content > section#' + active_tab ).show();
+	    
+
+		
 		switch (active_tab) {
 		  case "vonnach":
 		    console.log("vonnach");
-		   /*
-	 $('.tab.' + active_tab).siblings().removeClass('active');
-		    $('.tab.' + active_tab).addClass('active');
-	*/
-		
-		    
 		    break;
 		  case "via":
 		    console.log("via");
