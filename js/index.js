@@ -95,13 +95,19 @@ $( document ).ready(function(){
 	
 	
 	
-	/* ----- Accordeon ------- */
+	/* ----- Via Verbindungen ------- */
 	
 	
-	$('.timetable').hide();
+/* 	$('.timetable').hide(); */
 	$('.button.via-info').click(function() {
-    	$(this).slideDown();
-    	console.log("infobutton clicked");
+		if( $('.timetable').is(':hidden') ) {
+			$('.timetable').slideDown(500);
+			console.log("DOWN");
+		} else {
+	    	$('.timetable').slideUp();
+	    	console.log("UP");
+		}
+    	console.log("infobutton mached");
     });
 	
 });

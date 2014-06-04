@@ -3,6 +3,11 @@ $sbb-rot2: #b20000;
 $sbb-grau: #6b7786;
 $sbb-grau2: #3f444d;
 $sbb-hellgrau: #f8f8f8;
+$sbb-hellgrau2: #f1f1f1;
+$sbb-hellgrau3: #b2b2b2;
+$sbb-hellgrau4: #dddddd;
+
+
 
 @import "../css/via.css";
 @import "../css/style-simon.css";
@@ -335,7 +340,6 @@ sidebar {
 		
 		a.button {
 			color: white;
-			margin-bottom: 7px;
 
 			&:hover {
 				background-color: $sbb-grau2;
@@ -383,6 +387,29 @@ sidebar {
 		
 		table {
 			background-color: white;
+			width: 620px;
+			padding: 10px;
+			border-collapse: collapse;
+			border-radius: 4px 4px;
+
+						
+			tr {
+				border-bottom: solid 1px $sbb-hellgrau4;
+				td, th {
+					text-align: left;
+					height: 57px;
+					padding-left: 12px;
+				}
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+			
+			.compressed {
+				td, th {
+					height: 30px;
+				}
+			}
 		}
 
 	}
@@ -498,5 +525,13 @@ sidebar {
 	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman";
 			font-weight:400;
 
+}
+
+.hellgrau {
+	background-color: $sbb-hellgrau;
+}
+
+.hellgrau2 {
+	background-color: $sbb-hellgrau2;
 }
 

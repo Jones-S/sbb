@@ -218,8 +218,7 @@ sidebar {
     top: 0px;
     left: 338px; }
     #content section#via a.button {
-      color: white;
-      margin-bottom: 7px; }
+      color: white; }
       #content section#via a.button:hover {
         background-color: #3f444d;
         -webkit-tap-highlight-color: transparent; }
@@ -249,7 +248,21 @@ sidebar {
     #content section#via .buttoncontainer:after {
       clear: both; }
     #content section#via table {
-      background-color: white; }
+      background-color: white;
+      width: 620px;
+      padding: 10px;
+      border-collapse: collapse;
+      border-radius: 4px 4px; }
+      #content section#via table tr {
+        border-bottom: solid 1px #dddddd; }
+        #content section#via table tr td, #content section#via table tr th {
+          text-align: left;
+          height: 57px;
+          padding-left: 12px; }
+        #content section#via table tr:last-child {
+          border-bottom: none; }
+      #content section#via table .compressed td, #content section#via table .compressed th {
+        height: 30px; }
 
 #content-big {
   float: left;
@@ -321,3 +334,9 @@ sidebar {
 .regular {
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman";
   font-weight: 400; }
+
+.hellgrau {
+  background-color: #f8f8f8; }
+
+.hellgrau2 {
+  background-color: #f1f1f1; }
