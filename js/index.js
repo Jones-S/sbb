@@ -16,6 +16,24 @@ $( document ).ready(function(){
 	var active_tab = "vonnach"; //active tab as string
 	var current_count = 1;
 	
+	var ticket_values = {
+		start:"Zürich HB", 
+		ziel: undefined, 
+		via: undefined,
+		datum: undefined,
+		einfachretour: undefined,
+		klasse: undefined,
+		tickets: {
+			halbtax: undefined,
+			ganz: undefined,
+		},
+		preis: 157.20,
+	};
+	
+	function arrayshow() {
+		console.log(ticket_values['klasse']);
+	};
+	arrayshow();
 	
 	function clock() {
 	   var now = new Date();
@@ -23,7 +41,7 @@ $( document ).ready(function(){
 	   var dateStr = now.getDate() + '.' + (now.getMonth()+1) + '.' + now.getFullYear();
 	   $('header .datum').text(dateStr);
 	   $('header .zeit').text(timeStr);
-	}
+	};
 	clock();
 	
 	
