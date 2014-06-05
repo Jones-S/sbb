@@ -1,0 +1,86 @@
+
+	
+	
+}
+/* Wichtig ab hier*/
+
+dd{
+margin-left: 0px;
+
+
+}
+
+/*table, th, td ,tr
+{
+border-collapse:collapse;
+text-align: left;
+border: 0px solid;
+width: 400px;
+height: auto;
+background-color: #ffffff;
+padding: 10px;
+vertical-align: middle;
+border-bottom: 3px solid #ebebeb;
+    border-top: 3px solid #ebebeb;
+    border-collapse: collapse;
+
+}*/
+
+table th td tr{
+width: 100px;
+
+
+
+}
+
+.cmd{
+	width: 60%;
+	
+	
+	margin-top: 7px;
+	margin-bottom: 7px;
+	margin-left: 2px;
+
+	font-size: 16pt;
+    vertical-align: middle;
+	text-decoration: none; 
+    
+    display: inline-block; 
+    padding: 22px 22px;
+    background-color: #6b7786;
+    color: #ffffff;
+        
+}
+	
+.cmd_info{
+	width: 59px;
+	
+	margin-top: 7px;
+	margin-bottom: 7px;
+	margin-left: 2px;
+
+	vertical-align: middle;
+	font-size: 16pt;
+	text-align: center;
+    text-decoration: none; 
+   
+    display: inline-block; 
+    padding: 5px;
+    background-color: #6b7786;
+    color: #ffffff;
+}
+
+.cmd_info img{
+
+height:auto; 
+width:auto; 
+max-width:59px; 
+max-height:59px;
+	
+}
+	
+.cmd:active,
+.cmd_info:active
+ {
+    background-color: #3f444d;
+}

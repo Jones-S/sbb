@@ -53,7 +53,7 @@ body {
 			display: inline-block;
 			margin-top: 25%;
 			vertical-align: middle;
-			
+			margin-right: 1px;			
 			
 		}
 		
@@ -63,6 +63,7 @@ body {
 			border-bottom-right-radius: 0 0;
 		width:295px;
 		margin-left: 120px;	
+		
 		}
 		
 		.mainTicket-info{
@@ -70,9 +71,9 @@ body {
 			border-top-left-radius: 0 0;
 			border-bottom-left-radius: 0 0;
 			height: 90px;
-			width:60px;
+			width:90px;
 			background-color: $sbb-hellgrau;
-			background: $sbb-hellgrau3 url('../img/icons/info.png') no-repeat left 8px center;
+			background: $sbb-hellgrau3 url('../img/icons/info.png') no-repeat left 23px center;
 		}
 		
 		.mainWAngebote{
@@ -87,8 +88,8 @@ body {
 			border-top-left-radius: 0 0;
 			border-bottom-left-radius: 0 0;
 			height: 90px;
-			width:60px;
-			background: $sbb-hellgrau3 url('../img/icons/info.png') no-repeat left 8px center;
+			width:90px;
+			background: $sbb-hellgrau3 url('../img/icons/info.png') no-repeat left 23px center;
 		}	
 		
 		

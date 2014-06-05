@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+</head>
+
+<body ontouchstart="">
+
+    <div id="container">
+
+        <header>
+            <img class="logo" src="img/sbblogo.png">
+            <div id="date">
+                <p class="datum">12.08.2014</p>
+                <p class="zeit">09:34</p>
+            </div>
+            <!-- date -->
+            <a class="button abbrechen" href="main.html">
+                <p>X Abbrechen</p>
+            </a>
+            <a class="button question" href="#">
+                <p>?</p>
+            </a>
+
+
+        </header>
+
+
+        <sidebar>
+            <img class="active_triangle" alt="" src="img/tip.png" />
+            <ul class="tabs">
+                <li class="tab vonnach active">
+                    <a class="tablink" href="#" name="vonnach">
+                        <img class="icon ic_vonnach" alt="" src="img/icons/von-nach-white.png">
+                        <p class="regular">Von</p>
+                        <p class="bold">Zürich HB</p>
+                        <p class="regular">Nach</p>
+                        <p class="bold zielort">Zielort</p>
+                        <p class="aendern">Ändern</p>
+                        <hr class="clear" />
+                    </a>
+                </li>
+                <li class="tab via">
+                    <a class="tablink" href="#" name="via">
+                        <img class="icon ic_via" alt="" src="img/icons/via-grey.png" />
+                        <p class="beschreibung">Via</p>
+                        <p class="aendern">Ändern</p>
+                        <hr class="clear" />
+                    </a>
+                </li>
+                <li class="tab datum">
+                    <a class="tablink" href="#" name="datum">
+                        <img class="icon ic_datum" alt="" src="img/icons/datum-grey.png" />
+                        <p class="beschreibung">Datum</p>
+                        <p class="aendern">Ändern</p>
+                        <hr class="clear" />
+                    </a>
+                </li>
+                <li class="tab einfachretour">
+                    <a class="tablink" href="#" name="einfachretour">
+                        <img class="icon ic_einfachretour" alt="" src="img/icons/retour-grey.png" />
+                        <p class="beschreibung">Einfach/Retour</p>
+                        <p class="aendern">Ändern</p>
+                        <hr class="clear" />
+                    </a>
+                </li>
+                <li class="tab klasse">
+                    <a class="tablink" href="#" name="klasse">
+                        <img class="icon ic_klasse" alt="" src="img/icons/klasse-grey.png" />
+                        <p class="beschreibung">Klasse</p>
+                        <p class="aendern">Ändern</p>
+                        <hr class="clear" />
+                    </a>
+                </li>
+                <li class="tab tickets">
+                    <a class="tablink" href="#" name="tickets">
+                        <img class="icon ic_tickets" alt="" src="img/icons/ticket-grey.png" />
+                        <p class="beschreibung">Anzahl Tickets</p>
+                        <p class="aendern">Ändern</p>
+                        <hr class="clear" />
+                    </a>
+                </li>
+                <li class="tab preis">
+                    <a class="tablink" href="#" name="preis">
+                        <img class="icon ic_preis" alt="" src="img/icons/preis-grey.png" />
+                        <p>Preis</p>
+                        <p class="aendern">Bezahlen</p>
+                        <p class="chf bold"></p>
+                        <p class="euro bold"></p>
+                        <hr class="clear" />
+                    </a>
+                </li>
+            </ul>
+        </sidebar>
+
+
+        <div id="content">
+
+
+
+
+            <section id="vonnach">
+
+                <h1 class="bold">Wohin reisen Sie?</h1>
+                <div class="start_ziel">
+                    <div class="enterstart">
+                        <p>Von</p>
+                        <div class="buttoncontainer">
+                            <input class="regular" type="text" value="Zürich HB" name="Start" />
+                            <a class="button start" href="#">Start ändern</a>
+                        </div>
+                    </div>
+                    <hr class="clear" />
+                    <div class="enterdestination">
+                        <p>Nach</p>
+                        <div class="buttoncontainer">
+                            <input class="regular" type="text" value="" name="Ziel" />
+                            <a class="button ziel" href="#">Ziel ändern</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- start_ziel -->
+
+                <div class="schnellauswahl">
+                    <h2 class="bold">Schnellauswahl <span class="regular">ab Zürich</span> </h2>
+
+                    <a href="#" class="button schnellwahl">Basel</a>
+                    <a href="#" class="button schnellwahl">Luzern</a>
+                    <a href="#" class="button schnellwahl">Olten</a>
+                    <a href="#" class="button schnellwahl">St. Gallen</a>
+                    <a href="#" class="button schnellwahl">Winterthur</a>
+
+                </div>
+                <!-- schnellauswahl -->
+
+            </section>
+            <!-- vonnach -->
+
+
+
+            <section id="via">
+
+                <h1 class="bold">Welche Reiseroute wählen Sie?</h1>
+                <ul class="via-verbindungen">
+                    <li>
+                        <div class="buttoncontainer">
+                            <a class="button via next" href="#">Via Weinfelden</a>
+                            <a class="button via-info" href="#"></a>
+                        </div>
+
+                        <div class="timetable">
+                            <table>
+                                <tr class="hellgrau compressed">
+                                    <td colspan="5"><span class="bold">Fahrplan</span> (dient nur als Information)</td>
+                                </tr>
+                                <tr class="bold hellgrau2 compressed">
+                                    <th>Abfahrt</th>
+                                    <th>Ankunft</th>
+                                    <th>Umst.</th>
+                                    <th>Gleis</th>
+                                    <th>Zug</th>
+                                </tr>
+
+                                <tr>
+                                    <td>08:37</td>
+                                    <td>09:50</td>
+                                    <td>0</td>
+                                    <td>09:07</td>
+                                    <td>IR</td>
+                                </tr>
+
+                                <tr>
+                                    <td>08:40</td>
+                                    <td>10:24</td>
+                                    <td>3</td>
+                                    <td>16</td>
+                                    <td>RE, S 22, IRE, S 14</td>
+                                </tr>
+
+                                <tr>
+                                    <td>08:48</td>
+                                    <td>10:26</td>
+                                    <td>2</td>
+                                    <td>43</td>
+                                    <td>S 12, S 29, S 8</td>
+                                </tr>
+
+                                <tr>
+                                    <td>09:07</td>
+                                    <td>10:28</td>
+                                    <td>1</td>
+                                    <td>18</td>
+                                    <td>IC, S 14</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <!-- timetable -->
+                    </li>
+
+                    <li>
+
+                        <a class="button via route" href="#">Andere Reiseroute</a>
+                    </li>
+
+
+
+
+                </ul>
+            </section>
+
+
+
+
+
+            <!-- build:remove -->
+            <!--
+	<html lang="">
+	<head>
+	  <meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="" />
+	  	<meta name="keywords" content="" />
+		<meta name="robots" content="" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+		<link rel="stylesheet" href="../css/style-simon.css" type="text/css" />
+		<style type="text/css">
+			#datum {
+				background-color: #ebebeb;
+			}
+		</style>
+	</head>
+	<html>
+	<body ontouchstart="">
+	<div id="content">
+-->
+            <!-- /build -->
+
+            <section id="datum">
+
+                <h1 class="bold">An welchem Datum möchten Sie reisen?</h1>
+
+                <div class="datumbuttonwrap">
+                    <a href="#" class="button abheute next"> Gültig ab Heute</a>
+                    <a href="#" class="button anderesdatum next"> Anderes Datum</a>	
+                </div>
+
+
+            </section>
+            <!-- datum -->
+
+            <!-- build:remove -->
+            <!--
+	</div>
+	</body>
+	</html>
+-->
+            <!-- /build -->
+
+            <!-- build:remove -->
+            <!--
+	<html lang="">
+	<head>
+	  <meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="" />
+	  	<meta name="keywords" content="" />
+		<meta name="robots" content="" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+		<link rel="stylesheet" href="../css/style-simon.css" type="text/css" />
+		<style type="text/css">
+			#einfachretour {
+				background-color: #ebebeb;
+			}
+		</style>
+	</head>
+	<html>
+	<body ontouchstart="">
+	<div id="content">
+-->
+            <!-- /build -->
+
+            <section id="einfachretour">
+
+                <h1 class="bold">Brauchen Sie ein Retour-Ticket?</h1>
+
+                <a href="#" class="button einfach next"> Einfach</a>
+                <a href="#" class="button retour next"> Retour</a>	
+
+            </section>
+            <!-- einfachretour -->
+
+            <!-- build:remove -->
+            <!--
+	</div>
+	</body>
+	</html>
+-->
+            <!-- /build -->
+
+            <!-- build:remove -->
+            <!--
+	<html lang="">
+	<head>
+	  <meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="" />
+	  	<meta name="keywords" content="" />
+		<meta name="robots" content="" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+		<link rel="stylesheet" href="../css/style-simon.css" type="text/css" />
+		<style type="text/css">
+			#klasse {
+				background-color: #ebebeb;
+			}
+		</style>
+	</head>
+	<html>
+	<body ontouchstart="">
+	<div id="content">
+-->
+            <!-- /build -->
+
+            <section id="klasse">
+
+                <h1 class="bold">In welcher Klassen möchten Sie reisen?</h1>
+
+
+                <a href="#" class="button ersteklasse next"> 1. Klasse</a>
+                <a href="#" class="button zweiteklasse next"> 2. Klasse</a>	
+
+            </section>
+
+
+            </section>
+            <!-- klasse -->
+
+            <!-- build:remove -->
+            <!--
+	</div>
+	</body>
+	</html>
+-->
+            <!-- /build -->
+
+            <section id="tickets">
+
+                <h1 class="bold">Wählen Sie ihre Anzahl Tickets.</h1>
+
+                <div class="wrap">
+                    <h2 class="bold">Halbtax <span class="regular">(Kinder bis 16 Jahre, Hunde)</span></h2>
+
+                    <div class="counterwrap">
+                        <a href="#" class="counter">–</a> 
+                    </div>
+
+                    <div class="buttonwrap">
+                        <a href="#" class="button plus half">+</a>
+                        <a href="#" class="button minus half">-</a>	
+                    </div>
+                </div>
+
+
+                <div class="wrap">
+                    <h2 class="bold">Erwachsene</h2>
+
+                    <div class="counterwrap">
+                        <a href="#" class="counter">–</a> 
+                    </div>
+
+                    <div class="buttonwrap">
+                        <a href="#" class="button plus">+</a>
+                        <a href="#" class="button minus">-</a>	
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#" class="button next">Weiter</a>
+                </div>
+
+
+            </section>
+
+
+
+
+            <!-- build:remove -->
+            <!--
+	<html lang="">
+	<head>
+	  <meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="" />
+	  	<meta name="keywords" content="" />
+		<meta name="robots" content="" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="../css/style.css" type="text/css" />
+		<link rel="stylesheet" href="../css/style-simon.css" type="text/css" />
+		<style type="text/css">
+			#preis {
+				background-color: #ebebeb;
+			}
+		</style>
+	</head>
+	<html>
+	<body ontouchstart="">
+	<div id="content">
+-->
+            <!-- /build -->
+
+            <section id="preis">
+
+                <h1 class="bold">Bitte bezahlen Sie folgenden Betrag</h1>
+
+                <img src="img/bezahlen.jpg" alt="" />
+
+
+            </section>
+            <!-- preis -->
+
+            <!-- build:remove -->
+            <!--
+	</div>
+	</body>
+	</html>
+-->
+            <!-- /build -->
+
+
+
+
+
+        </div>
+
+        <div id="content-big">
+            <section id="zielaendern">
+                <section class="zieleingabe">
+                    <a href="#" class="button zurueck">Zurück</a>
+                    <hr class="clear" />
+
+                    <p>Nach</p>
+                    <div class="inputcontainer">
+                        <input class="regular autocomplete" type="text" value="" name="Ziel" />
+                        <!--
+					<div class="button-holder">
+						<ul>
+							<li><a class="button vorschlag" href="#">Kreuzberg</a></li>
+							<li><a class="button vorschlag" href="#">Rotkreuz</a></li>
+							<li><a class="button vorschlag next2" href="#">Kreuzlingen</a></li>
+						</ul>
+					</div>
+	-->
+                    </div>
+                </section>
+
+                <section class="keyboard">
+                    <img src="../img/keyboard.png" alt="keyboard" />
+                </section>
+            </section>
+
+        </div>
+
+
+
+
+
+    </div>
+    <!-- container -->
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+  
+  /* ---------------sektion Klasse Simon-a*/
+  
+  #content section#klasse {
+    width: 620px;
+    height: 643px;
+    /* 		float: left; */
+    padding: 33px; }
+    
+  #content section#klasse h1 {
+      font-size: 30px;
+      color: #576374;
+      margin-bottom: 30px; }
+        
+	 
+      
+  #content section#klasse a.button:hover {
+        background-color: #3f444d;
+        -webkit-tap-highlight-color: transparent; 
+  }
+        
+ 
