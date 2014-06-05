@@ -38,12 +38,25 @@
         background-color: #3f444d;
         -webkit-tap-highlight-color: transparent; }
         
-   /* ---------------sektion Tickets Simon-a*/
+        
+        /* ÜBERNOMMEN IN STYLE.CS!!! */  
+        /*
+-
+        -
+        -
+        -
+        -
+        -
+        
+*/
+        
+        
+         /* ---------------sektion Tickets Simon-a*/
    
-   #content section#tickets {
+  /*
+ #content section#tickets {
     width: 620px;
     height: 643px;
-    /* 		float: left; */
     padding: 33px; }
     
   #content section#tickets h1 {
@@ -116,3 +129,4 @@
         background-color: #3f444d;
         -webkit-tap-highlight-color: transparent; }
   
+*/

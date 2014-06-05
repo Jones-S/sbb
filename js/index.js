@@ -150,7 +150,7 @@ $( document ).ready(function(){
 	/* ----- Via Verbindungen ------- */
 	
 	
-/* 	$('.timetable').hide(); */
+	$('.timetable').hide();
 	$('.button.via-info').click(function() {
 		if( $('.timetable').is(':hidden') ) {
 			$('.timetable').slideDown(500);

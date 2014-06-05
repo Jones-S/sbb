@@ -270,6 +270,52 @@ sidebar {
     float: left; }
   #content section#einfachretour .einfach {
     margin-right: 20px; }
+  #content section#tickets h2 {
+    font-size: 23px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    clear: both; }
+  #content section#tickets a.counter {
+    line-height: 130px;
+    padding-left: 0px;
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    width: 127px;
+    margin-left: 0px;
+    margin-bottom: 7px;
+    margin-top: 10px;
+    float: left;
+    background-color: white; }
+  #content section#tickets a.button {
+    line-height: 60px;
+    padding-left: 0px;
+    text-align: center;
+    color: white;
+    display: block;
+    width: 60px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    margin-top: 10px; }
+  #content section#tickets .buttonwrap {
+    width: 200px;
+    float: left; }
+  #content section#tickets .ticketicons {
+    width: 129px;
+    height: 129px;
+    background-color: white;
+    float: left; }
+  #content section#tickets .iconhalbtax {
+    background: #576374 url("../img/icons/1klasse.png") no-repeat left 10px top 10px;
+    background-size: 40px; }
+  #content section#tickets .counter {
+    -moz-border-radius: 4px 4px;
+    border-radius: 4px 4px;
+    background-color: #6b7786; }
+  #content section#tickets .counterwrap {
+    float: left;
+    margin-left: 10px;
+    width: 129px; }
 
 #content-big {
   position: relative;
