@@ -19,7 +19,9 @@ body {
   font-size: 19px; }
 
 .welcome-screen {
-  background: white url("../img/bg.png") no-repeat; }
+  width: 100%;
+  height: 100%;
+  background: white url("../img/icons/start-prescreen.jpg") center center; }
 
 #container {
   margin: 0 auto;
