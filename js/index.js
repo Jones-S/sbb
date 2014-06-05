@@ -47,7 +47,7 @@ $( document ).ready(function(){
 	
 	/* switch case statement depending on active tab */
 	
-	var switch_tab = function (){
+	var switch_tab = function ( event ){
 		//on every click; remove all active classes and add it to the clicked tab
 		$('.tab.' + active_tab).siblings().removeClass('active');
 	    $('.tab.' + active_tab).addClass('active');
@@ -117,14 +117,50 @@ $( document ).ready(function(){
 	
 	}
 	
+	var goto_via = function () {
+		active_tab = "via";
+		switch_tab(); //call switch tab
+		//redundant but fuck it... (click_zurueck would do the same, but it aint working)
+		setTimeout(function(){
+        	$('sidebar').removeClass('sidebar-out');
+		}, 200);
+		$("#content-big" ).fadeOut( 300 );
+		$("#content" ).delay( 300 ).fadeIn( 300 );
+		//set ziel
+		ticket_values['ziel'] = 'Kreuzlingen';
+		console.log(ticket_values['ziel']);
+		//update summary
+		update('ziel');
+	}
+	
+	var update = function ( wahl ){
+		console.log('mein wahltab ' + wahl);
+		
+		if (ticket_values['ziel'] = undefined) {
+			$('p.zielort').text('Zielort2');
+			console.log('ziel undefiniert');
+		} else {
+			// wieso geht das nicht??? MAGNUS
+			//$('.zielort').text(ticket_values['ziel']);
+			console.log('ziel klar');
+			$('.zielort').text('Kreuzlingen');
+		}
+		
+		if ( wahl  ){
+			$('li.via p.beschreibung').text('Via');
+		} else {
+			$('li.via p.beschreibung').text(ticket_values['via']);
+		}
+	}
+	
 	var next_tab = function ( event ) {
 		var $section_name = $( event.target ).closest('section').attr('id');
 		console.log( $section_name );
 		$('#' + $section_name ).hide();
 		$('#' + $section_name ).next().show();
 		active_tab = $('#' + $section_name ).next().attr('id'); //update active tab
-		switch_tab(); //call switch case function
-		
+		switch_tab( ); //call switch case function
+		update($section_name); //update summary
 		
 	}
 	
@@ -145,6 +181,7 @@ $( document ).ready(function(){
 	
 	$( 'sidebar a' ).click( click_tab );
 	$( 'a.next' ).click ( next_tab );
+	$( 'a.next2' ).click ( goto_via );
 	$( '#tickets .plus, #tickets .minus').click ( counter ); //call counter func on -/+
 	
 	
