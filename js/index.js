@@ -15,7 +15,7 @@ $( document ).ready(function(){
 
 	
 	var active_tab = "vonnach"; //active tab as string
-	var current_count = 1;
+	var current_count = 0;
 	
 	var ticket_values = {
 		start:"Zürich HB", 
@@ -192,10 +192,18 @@ $( document ).ready(function(){
 			console.log("+");
 			current_count ++;
 			$target.parent().parent().find( 'a.counter').text(current_count);
+			
 		} else if (current_count > 0) {
 			console.log("-");
 			current_count --;
+			if(current_count == 0){
+				$target.parent().parent().find( 'a.counter').text("–");
+				current_count = 0;
+			}
+			else
+			{
 			$target.parent().parent().find( 'a.counter').text(current_count);
+			}
 		};
 	}
 	

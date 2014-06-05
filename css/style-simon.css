@@ -14,23 +14,28 @@
         
       
   #content section#klasse a.button {
-      line-height: 60px;
+      line-height: 90px;
       padding-left: 80px;
       color: white;
-      display: block;
-      width:130px;
+      display: inline-block;
+      width:215px;
       margin-left:0px;
       margin-bottom: 7px;
   }
   
   .ersteklasse {
-	  background:#576374 url("../img/icons/1klasse.png") no-repeat left 10px top 10px;
+	  background:#576374 url("../img/icons/1klasse.png") no-repeat left 15px top 25px;
 	  background-size: 40px;
-  }
+	 
+	 
+			
+			
   
   .zweiteklasse {
-	  background:#576374 url("../img/icons/2klasse.png")  no-repeat left 10px top 10px;
+	  background:#576374 url("../img/icons/1klasse.png") no-repeat left 15px top 25px;
 	  background-size: 40px;
+	 
+			
   }
       
       
