@@ -77,7 +77,9 @@ header {
 		margin-right: 30px;
 		float: left;
 		height: 38px;
-		margin-left: 50px;
+		margin-left: 120px;
+		font-size: 15px;
+		vertical-align: middle;
 		
 		
 		p {
@@ -85,12 +87,20 @@ header {
 			line-height: 38px;
 			font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold";
 			font-weight:600;
+			
 		}
 		
-		.datum {
+		.datum{
 			margin-right: 20px;
 			font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman";
 			font-weight:400;
+		}
+		
+		.zeit{
+			margin-right: 20px;
+			font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman";
+			font-weight:600;
+			
 		}
 		
 	}

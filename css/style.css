@@ -51,7 +51,9 @@ header {
     margin-right: 30px;
     float: left;
     height: 38px;
-    margin-left: 50px; }
+    margin-left: 120px;
+    font-size: 15px;
+    vertical-align: middle; }
     header #date p {
       float: left;
       line-height: 38px;
@@ -61,6 +63,10 @@ header {
       margin-right: 20px;
       font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman";
       font-weight: 400; }
+    header #date .zeit {
+      margin-right: 20px;
+      font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman";
+      font-weight: 600; }
   header .button {
     float: right;
     display: block;

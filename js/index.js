@@ -39,10 +39,13 @@ $( document ).ready(function(){
 	};
 	arrayshow();
 	
+	var monthNames = [ "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December" ];
+	
 	function clock() {
 	   var now = new Date();
 	   var timeStr = now.getHours()+':'+now.getMinutes();
-	   var dateStr = now.getDate() + '.' + (now.getMonth()+1) + '.' + now.getFullYear();
+	   var dateStr = now.getDate() + '. ' + monthNames[now.getMonth()] + ' ' + now.getFullYear();
 	   $('header .datum').text(dateStr);
 	   $('header .zeit').text(timeStr);
 	};
