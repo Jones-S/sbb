@@ -209,12 +209,16 @@ $( document ).ready(function(){
 	
 	var vorschlaege = [ "c++", "java", "php", "coldfusion", "javascript", "asp", "ruby" ];
 	$( ".autocomplete" ).autocomplete({
-	  source: function( request, response ) {
-	          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
-	          response( $.grep( vorschlaege, function( item ){
-	              return matcher.test( item );
-	          }) );
-	      }
+		source: function( request, response ) {
+			$.get('http://transport.opendata.ch/v1/locations?query=' + request.term,
+			function callback (data) {
+				var dataarray = [];
+				for (var i = 0; i < data.stations.length; i++){
+					dataarray.push(data.stations[i].name);
+				}
+				response(dataarray);
+			});
+		}
 	});
 	
 	$( 'sidebar a' ).click( click_tab );
