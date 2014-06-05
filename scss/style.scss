@@ -457,12 +457,14 @@ sidebar {
 		}
 		
 		.abheute {
-			background:#576374 url("../img/icons/datum-white.png") no-repeat left 20px top 22px;
+			background:#576374 url("../img/icons/datum-white.png") no-repeat left 20px top 24px;
 			margin-right: 20px;
+			background-size: 40px;
 		}
 		
 		.anderesdatum{
-			background:#576374 url("../img/icons/datum-ad.png") no-repeat left 20px top 22px;
+			background:#576374 url("../img/icons/kalender-ad.png") no-repeat left 20px top 22px;
+			background-size: 40px;
 		}
 			
 		
@@ -585,10 +587,12 @@ sidebar {
 		.ersteklasse {
 			background:#576374 url("../img/icons/1klasse.png") no-repeat left 20px top 25px;
 			margin-right: 20px;	
+			background-size: 40px;
 		}
 	
 		.zweiteklasse {
 			background:#576374 url("../img/icons/2klasse.png") no-repeat left 20px top 25px;
+			background-size: 40px;
 		}
      
 	}
