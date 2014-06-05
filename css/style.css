@@ -261,7 +261,7 @@ sidebar {
       height: 60px;
       width: 60px;
       display: block;
-      background: #6b7786 url("../img/icons/info.png") no-repeat left 8px center;
+      background: #b2b2b2 url("../img/icons/info.png") no-repeat left 8px center;
       float: left;
       border-top-left-radius: 0 0;
       border-bottom-left-radius: 0 0; }
@@ -398,6 +398,10 @@ sidebar {
     -moz-transition: all 500ms ease-out 1s;
     -o-transition: all 500ms ease-out 1s;
     transition: all 500ms ease-out 1s; }
+    #content-big section#zielaendern .inputcontainer {
+      height: 350px;
+      display: block;
+      overflow: hidden; }
     #content-big section#zielaendern .zieleingabe {
       height: 430px; }
       #content-big section#zielaendern .zieleingabe a.zurueck {

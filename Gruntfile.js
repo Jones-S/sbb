@@ -26,7 +26,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'scss/',
-                    src: ['style.scss'],
+                    src: ['style.scss', 'jquery-ui.scss'],
                     dest: 'css',
                     ext: '.css'
                 }]

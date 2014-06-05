@@ -305,8 +305,7 @@ sidebar {
 				line-height: 30px;
 				width: 434px;
 				float: left;
-			}
-		
+			}		
 			
 			a.start {
 				background-color: #84868D;
@@ -415,7 +414,7 @@ sidebar {
 			height: 60px;
 			width: 60px;
 			display: block;
-			background: $sbb-grau url('../img/icons/info.png') no-repeat left 8px center;
+			background: $sbb-hellgrau3 url('../img/icons/info.png') no-repeat left 8px center;
 			float: left;
 			border-top-left-radius: 0 0;
 			border-bottom-left-radius: 0 0;
@@ -641,6 +640,13 @@ sidebar {
 	    -moz-transition: all 500ms ease-out 1s;
 	    -o-transition: all 500ms ease-out 1s;
 	    transition: all 500ms ease-out 1s;
+	    
+	    			
+		.inputcontainer {
+			height: 350px;
+			display: block;
+			overflow: hidden;
+		}
 		
 		.zieleingabe {
 			height: 430px;
