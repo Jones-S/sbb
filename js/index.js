@@ -207,9 +207,15 @@ $( document ).ready(function(){
 		};
 	}
 	
-	$('.zielinput').change(function() {
-		console.log("i'm writing");
-    });
+	var vorschlaege = [ "c++", "java", "php", "coldfusion", "javascript", "asp", "ruby" ];
+	$( ".autocomplete" ).autocomplete({
+	  source: function( request, response ) {
+	          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+	          response( $.grep( vorschlaege, function( item ){
+	              return matcher.test( item );
+	          }) );
+	      }
+	});
 	
 	$( 'sidebar a' ).click( click_tab );
 	$( 'a.next' ).click ( next_tab );

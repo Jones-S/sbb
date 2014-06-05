@@ -347,6 +347,20 @@ sidebar {
     float: left;
     margin-left: 10px;
     width: 129px; }
+  #content section#klasse a.button {
+    background-size: 40px;
+    text-align: center;
+    line-height: 90px;
+    color: white;
+    display: inline-block;
+    width: 295px;
+    margin-left: 0px;
+    margin-bottom: 7px; }
+  #content section#klasse .ersteklasse {
+    background: #576374 url("../img/icons/1klasse.png") no-repeat left 20px top 25px;
+    margin-right: 20px; }
+  #content section#klasse .zweiteklasse {
+    background: #576374 url("../img/icons/2klasse.png") no-repeat left 20px top 25px; }
 
 #content-big {
   position: relative;

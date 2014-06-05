@@ -552,6 +552,30 @@ sidebar {
 		}	
 
 	}
+	
+	section#klasse {
+	
+		a.button {
+			background-size: 40px;
+			text-align: center;
+			line-height: 90px;
+			color: white;
+			display: inline-block;
+			width:295px;
+			margin-left:0px;
+			margin-bottom: 7px;
+			
+		}
+		.ersteklasse {
+			background:#576374 url("../img/icons/1klasse.png") no-repeat left 20px top 25px;
+			margin-right: 20px;	
+		}
+	
+		.zweiteklasse {
+			background:#576374 url("../img/icons/2klasse.png") no-repeat left 20px top 25px;
+		}
+     
+	}
 
 		
 	
