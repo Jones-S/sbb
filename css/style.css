@@ -21,7 +21,8 @@ body {
 .welcome-screen {
   width: 100%;
   height: 100%;
-  background: white url("../img/icons/start-prescreen.jpg") center center; }
+  background: white url("../img/icons/start-prescreen.jpg") center top no-repeat;
+  margin-bottom: 200px; }
 
 #container {
   margin: 0 auto;
