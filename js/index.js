@@ -145,14 +145,14 @@ $( document ).ready(function(){
 	var update = function ( wahl ){
 		console.log('mein wahltab ' + wahl);
 		
-		if (ticket_values['ziel'] = undefined) {
+		if (ticket_values['ziel'] = "") {
 			$('p.zielort').text('Zielort2');
 			console.log('ziel undefiniert');
 		} else {
 			// wieso geht das nicht??? MAGNUS
-			//$('.zielort').text(ticket_values['ziel']);
+			$('.zielort').text(ticket_values['ziel']);
 			console.log('ziel klar');
-			$('.zielort').text('Kreuzlingen');
+/* 			$('.zielort').text('Kreuzlingen'); */
 		}
 		
 		if ( wahl  ){
@@ -163,7 +163,7 @@ $( document ).ready(function(){
 
 		switch (wahl) {
 			case "ziel":
-				$('.zielort').text('Kreuzlingen');
+/* 				$('.zielort').text('Kreuzlingen'); */
 				$('.vonnach p.aendern').show();
 				break;
 			case "via":
