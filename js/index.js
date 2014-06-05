@@ -140,7 +140,8 @@ $( document ).ready(function(){
 		if ( wahl != 'tickets' ){
 			ticket_values[wahl] = value;
 		} else {
-			//how to process halbtax etc.
+			ticket_values[wahl]['halbtax'] = value[0];
+			ticket_values[wahl]['ganz'] = value[1];
 		}
 		switch (wahl) {
 			case "ziel":
@@ -168,7 +169,8 @@ $( document ).ready(function(){
 				$('.klasse p.aendern').show();
 				break;
 			case "tickets":
-				$('li.tickets p.beschreibung').text('2x Halbtax, 2x Erwachsene');
+				console.log(value);
+				$('li.tickets p.beschreibung').text( ticket_values['tickets']['halbtax']+ 'x Halbtax, ' +  ticket_values['tickets']['ganz'] + 'x Erwachsene');
 				$('li.preis p.chf').text(ticket_values['preis']['chf']);
 				$('li.preis p.euro').text(ticket_values['preis']['euro']);
 				$('li.tickets p.beschreibung').css('font-size', '14px');
@@ -182,19 +184,25 @@ $( document ).ready(function(){
 	
 	var next_tab = function ( event ) {
 		var $section_name = $( event.target ).closest('section').attr('id');
+		$('#' + $section_name ).hide();
+		$('#' + $section_name ).next().show();
+		active_tab = $('#' + $section_name ).next().attr('id'); //update active tab
+		switch_tab( ); //call switch case function
+		
 		if ($section_name != 'tickets'){
 			var $value = $(event.target).attr('data-value');
-		} else {
-			
+		} else if ( $section_name = 'tickets' ) {
+			var $halbtax_ct = $('.counter:first').text();
+			var $ganz_ct = $('.counter:eq(1)').text(); //get second of class counter
+			if ($halbtax_ct == '–'){ $halbtax_ct = '0'};
+			if ($ganz_ct == '–'){ $ganz_ct = '0'}
+			var $value = [$halbtax_ct, $ganz_ct]; //array with numbers
 		}
 		//var $value = $(event.target).dataset;
 		//$value.dataset.value = mein wert   ( in html: data-value="mein wert" )
 		//funktioniert leider nicht - JONAS
 		
-		$('#' + $section_name ).hide();
-		$('#' + $section_name ).next().show();
-		active_tab = $('#' + $section_name ).next().attr('id'); //update active tab
-		switch_tab( ); //call switch case function
+		
 		update( $section_name, $value ); //update summary
 		
 	}
