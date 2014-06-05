@@ -85,14 +85,13 @@ sidebar {
   display: block;
   position: relative;
   left: 0;
-  -webkit-transition: left 500ms ease-out 1s;
-  -moz-transition: left 500ms ease-out 1s;
-  -o-transition: all 500ms ease-out 1s;
-  transition: left 500ms ease-out 1s; }
-  sidebar ul img.active_triangle {
-    position: relative;
-    float: right;
-    top: 67px; }
+  -webkit-transition: left 300ms ease-out;
+  transition: left 300ms ease-out; }
+  sidebar img.active_triangle {
+    position: absolute;
+    left: 326px;
+    top: 65px;
+    z-index: 10; }
   sidebar ul li {
     border-bottom: 1px solid #e4e3e3;
     position: relative; }
@@ -136,7 +135,7 @@ sidebar {
     sidebar ul .vonnach img.icon {
       margin-top: 25px; }
     sidebar ul .vonnach p.aendern {
-      top: -69px; }
+      top: 63px; }
   sidebar ul .preis {
     border: none; }
     sidebar ul .preis .chf {

@@ -130,18 +130,17 @@ sidebar {
 	display: block;
 	position: relative;
 	left: 0;
-	-webkit-transition: left 500ms ease-out 1s;
-    -moz-transition: left 500ms ease-out 1s;
-    -o-transition: all 500ms ease-out 1s;
-    transition: left 500ms ease-out 1s;
+	-webkit-transition: left 300ms ease-out;
+    transition: left 300ms ease-out;
+	
+	img.active_triangle {
+		position: absolute;
+		left:326px;
+		top: 65px;
+		z-index: 10;
+	}
 	
 	ul {
-		img.active_triangle {
-			position: relative;
-			float: right;
-			top: 67px;
-		}
-		
 		$padding: 16px; 
 		
 		li {
@@ -213,7 +212,7 @@ sidebar {
 			}
 			
 			p.aendern {
-				top: -69px;
+				top: 63px;
 			}
 		}
 		
