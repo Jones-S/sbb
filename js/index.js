@@ -138,6 +138,7 @@ $( document ).ready(function(){
 		console.log(ticket_values['ziel']);
 		//update summary
 		update('ziel');
+		$(".autocomplete").blur();
 	}
 	
 	var update = function ( wahl ){
@@ -229,6 +230,7 @@ $( document ).ready(function(){
 	$( 'a.next2' ).click ( goto_via );
 	$( '#tickets .plus, #tickets .minus').click ( counter ); //call counter func on -/+
 	$( '.ui-corner-all' ).click ( goto_via );
+	
 	
 	
 	var click_start_aendern = function ( event ) {
