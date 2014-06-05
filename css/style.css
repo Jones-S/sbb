@@ -18,6 +18,9 @@ body {
   font-stretch: normal;
   font-size: 19px; }
 
+.welcome-screen {
+  background: white url("../img/bg.png") no-repeat; }
+
 #container {
   margin: 0 auto;
   width: 1024px;
