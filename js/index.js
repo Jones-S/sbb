@@ -20,14 +20,14 @@ $( document ).ready(function(){
 	
 	var ticket_values = {
 		start:"Zürich HB", 
-		ziel: undefined, 
+		ziel: "", 
 		via: undefined,
 		datum: undefined,
 		einfachretour: undefined,
 		klasse: undefined,
 		tickets: {
-			halbtax: undefined,
-			ganz: undefined,
+			halbtax: 0,
+			ganz: 0,
 		},
 		preis: {
 			chf: "CHF 157.20",
@@ -145,6 +145,22 @@ $( document ).ready(function(){
 	var update = function ( wahl ){
 		console.log('mein wahltab ' + wahl);
 		
+		if (ticket_values['ziel'] = undefined) {
+			$('p.zielort').text('Zielort2');
+			console.log('ziel undefiniert');
+		} else {
+			// wieso geht das nicht??? MAGNUS
+			//$('.zielort').text(ticket_values['ziel']);
+			console.log('ziel klar');
+			$('.zielort').text('Kreuzlingen');
+		}
+		
+		if ( wahl  ){
+			$('li.via p.beschreibung').text('Via');
+		} else {
+			$('li.via p.beschreibung').text(ticket_values['via']);
+		}
+
 		switch (wahl) {
 			case "ziel":
 				$('.zielort').text('Kreuzlingen');
