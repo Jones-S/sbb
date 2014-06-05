@@ -294,7 +294,10 @@ sidebar {
     text-align: center;
     float: left; }
   #content section#einfachretour .einfach {
+    background: #576374 url("../img/icons/einfach.png") no-repeat left 20px top 15px;
     margin-right: 20px; }
+  #content section#einfachretour .retour {
+    background: #576374 url("../img/icons/retour.png") no-repeat left 20px top 15px; }
   #content section#tickets h2 {
     font-size: 23px;
     padding-top: 20px;
