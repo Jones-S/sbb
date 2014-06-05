@@ -283,8 +283,7 @@ sidebar {
 				line-height: 30px;
 				width: 434px;
 				float: left;
-			}
-		
+			}		
 			
 			a.start {
 				background-color: #84868D;
@@ -599,6 +598,13 @@ sidebar {
 	    -moz-transition: all 500ms ease-out 1s;
 	    -o-transition: all 500ms ease-out 1s;
 	    transition: all 500ms ease-out 1s;
+	    
+	    			
+		.inputcontainer {
+			height: 350px;
+			display: block;
+			overflow: hidden;
+		}
 		
 		.zieleingabe {
 			height: 430px;

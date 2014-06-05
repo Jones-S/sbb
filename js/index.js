@@ -225,7 +225,7 @@ $( document ).ready(function(){
 	$( 'a.next' ).click ( next_tab );
 	$( 'a.next2' ).click ( goto_via );
 	$( '#tickets .plus, #tickets .minus').click ( counter ); //call counter func on -/+
-	
+	$( '.ui-corner-all' ).click ( goto_via );
 	
 	
 	var click_start_aendern = function ( event ) {
