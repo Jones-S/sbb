@@ -24,6 +24,42 @@ body {
   background: white url("../img/icons/start-prescreen.jpg") center top no-repeat;
   margin-bottom: 200px; }
 
+.main-page a.button {
+  background-size: 40px;
+  text-align: center;
+  line-height: 90px;
+  color: white;
+  display: inline-block;
+  margin-top: 25%;
+  vertical-align: middle; }
+.main-page .mainTicket {
+  border-radius: 4px 4px;
+  border-top-right-radius: 0 0;
+  border-bottom-right-radius: 0 0;
+  width: 295px;
+  margin-left: 120px; }
+.main-page .mainTicket-info {
+  border-radius: 4px 4px;
+  border-top-left-radius: 0 0;
+  border-bottom-left-radius: 0 0;
+  height: 90px;
+  width: 60px;
+  background-color: #f8f8f8;
+  background: #b2b2b2 url("../img/icons/info.png") no-repeat left 8px center; }
+.main-page .mainWAngebote {
+  border-radius: 4px 4px;
+  border-top-right-radius: 0 0;
+  border-bottom-right-radius: 0 0;
+  width: 295px;
+  margin-left: 100px; }
+.main-page .mainWAngebote-info {
+  border-radius: 4px 4px;
+  border-top-left-radius: 0 0;
+  border-bottom-left-radius: 0 0;
+  height: 90px;
+  width: 60px;
+  background: #b2b2b2 url("../img/icons/info.png") no-repeat left 8px center; }
+
 #container {
   margin: 0 auto;
   width: 1024px;

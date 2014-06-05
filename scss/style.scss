@@ -42,8 +42,58 @@ body {
 }
 
 
+.main-page{
 
-
+	a.button {
+			
+			background-size: 40px;
+			text-align: center;
+			line-height: 90px;
+			color: white;
+			display: inline-block;
+			margin-top: 25%;
+			vertical-align: middle;
+			
+			
+		}
+		
+		.mainTicket{
+		border-radius: 4px 4px;
+			border-top-right-radius: 0 0;
+			border-bottom-right-radius: 0 0;
+		width:295px;
+		margin-left: 120px;	
+		}
+		
+		.mainTicket-info{
+			border-radius: 4px 4px;
+			border-top-left-radius: 0 0;
+			border-bottom-left-radius: 0 0;
+			height: 90px;
+			width:60px;
+			background-color: $sbb-hellgrau;
+			background: $sbb-hellgrau3 url('../img/icons/info.png') no-repeat left 8px center;
+		}
+		
+		.mainWAngebote{
+			border-radius: 4px 4px;
+			border-top-right-radius: 0 0;
+			border-bottom-right-radius: 0 0;
+			width:295px;
+			margin-left: 100px;	
+		}
+		.mainWAngebote-info{
+			border-radius: 4px 4px;
+			border-top-left-radius: 0 0;
+			border-bottom-left-radius: 0 0;
+			height: 90px;
+			width:60px;
+			background: $sbb-hellgrau3 url('../img/icons/info.png') no-repeat left 8px center;
+		}	
+		
+		
+	
+			}
 
 
 
