@@ -10,6 +10,7 @@ $( document ).ready(function(){
 	$( "#klasse" ).hide();
 	$( "#tickets" ).hide();
 	$( "#preis" ).hide();
+	$( "p.aendern").hide();
 
 
 	
@@ -27,7 +28,10 @@ $( document ).ready(function(){
 			halbtax: undefined,
 			ganz: undefined,
 		},
-		preis: 157.20,
+		preis: {
+			chf: "CHF 157.20",
+			euro: "€ 110.40",
+		}
 	};
 	
 	function arrayshow() {
@@ -136,21 +140,38 @@ $( document ).ready(function(){
 	var update = function ( wahl ){
 		console.log('mein wahltab ' + wahl);
 		
-		if (ticket_values['ziel'] = undefined) {
-			$('p.zielort').text('Zielort2');
-			console.log('ziel undefiniert');
-		} else {
-			// wieso geht das nicht??? MAGNUS
-			//$('.zielort').text(ticket_values['ziel']);
-			console.log('ziel klar');
-			$('.zielort').text('Kreuzlingen');
-		}
-		
-		if ( wahl  ){
-			$('li.via p.beschreibung').text('Via');
-		} else {
-			$('li.via p.beschreibung').text(ticket_values['via']);
-		}
+		switch (wahl) {
+			case "ziel":
+				$('.zielort').text('Kreuzlingen');
+				$('.vonnach p.aendern').show();
+				break;
+			case "via":
+				$('li.via p.beschreibung').text('Via Weinfelden');
+				$('.via p.aendern').show();
+				break;
+			case "datum":
+				$('li.datum p.beschreibung').text('Gültig ab heute');
+				$('.datum p.aendern').show();
+				break;
+			case "einfachretour":
+				$('li.einfachretour p.beschreibung').text('Retour');
+				$('.einfachretour p.aendern').show();
+				break;
+			case "klasse":
+				$('li.klasse p.beschreibung').text('2. Klasse');
+				$('.klasse p.aendern').show();
+				break;
+			case "tickets":
+				$('li.tickets p.beschreibung').text('2x Halbtax, 2x Erwachsene');
+				$('li.preis p.chf').text(ticket_values['preis']['chf']);
+				$('li.preis p.euro').text(ticket_values['preis']['euro']);
+				$('li.tickets p.beschreibung').css('font-size', '14px');
+				$('.tickets p.aendern').show();
+				$('.preis p.aendern').show();
+				break;
+				
+	  	}
+
 	}
 	
 	var next_tab = function ( event ) {
@@ -165,17 +186,16 @@ $( document ).ready(function(){
 	}
 	
 	var counter = function ( event ) {
-		console.log("count please");
+		$target = $(event.target); //a.button.plus
 		// check if plus or minus is clicked
-/* 		console.log('curr count: ' + current_count); */
 		if ( $(this).attr("class") != undefined && $(this).hasClass('plus') ) {
 			console.log("+");
 			current_count ++;
-			$(event.target).parent('.wrap').find( 'a.counter').text(current_count);
+			$target.parent().parent().find( 'a.counter').text(current_count);
 		} else if (current_count > 0) {
 			console.log("-");
 			current_count --;
-			$('a.counter').text(current_count);
+			$target.parent().parent().find( 'a.counter').text(current_count);
 		};
 	}
 	
