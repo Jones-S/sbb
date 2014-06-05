@@ -15,7 +15,8 @@ $( document ).ready(function(){
 
 	
 	var active_tab = "vonnach"; //active tab as string
-	var current_count = 0;
+	var current_count_half = 0;
+	var current_count_full = 0;
 	
 	var ticket_values = {
 		start:"Zürich HB", 
@@ -194,20 +195,32 @@ $( document ).ready(function(){
 		// check if plus or minus is clicked
 		if ( $(this).attr("class") != undefined && $(this).hasClass('plus') ) {
 			console.log("+");
-			current_count ++;
-			$target.parent().parent().find( 'a.counter').text(current_count);
+			if ($(this).hasClass('half')) {
+				current_count_half ++;
+				$target.parent().parent().find( 'a.counter').text(current_count_half);
+			} else {
+				current_count_full ++;
+				$target.parent().parent().find( 'a.counter').text(current_count_full);
+			}
 			
-		} else if (current_count > 0) {
+		} else {
 			console.log("-");
-			current_count --;
-			if(current_count == 0){
-				$target.parent().parent().find( 'a.counter').text("–");
-				current_count = 0;
+			if ($(this).hasClass('half')){
+				current_count_half --;
+				if(current_count_half <= 0){
+					$target.parent().parent().find( 'a.counter').text("–");
+					current_count_half = 0;
+				}
+				$target.parent().parent().find( 'a.counter').text(current_count_half);
+			} else {
+				current_count_full --;
+				if(current_count_full <= 0){
+					$target.parent().parent().find( 'a.counter').text("–");
+					current_count_full = 0;
+				}
+				$target.parent().parent().find( 'a.counter').text(current_count_full);
 			}
-			else
-			{
-			$target.parent().parent().find( 'a.counter').text(current_count);
-			}
+
 		};
 	}
 	
