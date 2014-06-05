@@ -199,6 +199,10 @@ $( document ).ready(function(){
 		};
 	}
 	
+	$('.zielinput').change(function() {
+		console.log("i'm writing");
+    });
+	
 	$( 'sidebar a' ).click( click_tab );
 	$( 'a.next' ).click ( next_tab );
 	$( 'a.next2' ).click ( goto_via );
