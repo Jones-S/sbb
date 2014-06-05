@@ -85,8 +85,8 @@ sidebar {
   display: block;
   position: relative;
   left: 0;
-  -webkit-transition: left 300ms ease-out;
-  transition: left 300ms ease-out; }
+  -webkit-transition: left 250ms ease-out;
+  transition: left 250ms ease-out; }
   sidebar img.active_triangle {
     position: absolute;
     left: 326px;
@@ -297,6 +297,12 @@ sidebar {
     margin-left: 7px;
     margin-bottom: 7px;
     margin-top: 10px; }
+  #content section#tickets a.button.next {
+    position: absolute;
+    bottom: 33px;
+    right: 33px;
+    width: 200px;
+    margin: 0; }
   #content section#tickets .buttonwrap {
     width: 200px;
     float: left; }
@@ -319,10 +325,10 @@ sidebar {
 
 #content-big {
   position: relative;
-  -webkit-transition: left 500ms ease-out 1s;
-  -moz-transition: left 500ms ease-out 1s;
-  -o-transition: all 500ms ease-out 1s;
-  transition: left 500ms ease-out 1s; }
+  top: -709px;
+  left: 1024px;
+  -webkit-transition: left 500ms ease-out;
+  transition: left 500ms ease-out; }
   #content-big section#zielaendern {
     width: 955px;
     height: 640px;

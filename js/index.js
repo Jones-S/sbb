@@ -2,7 +2,7 @@ $( document ).ready(function(){
 	
 	console.log("hey there");
 
-	/* $( "#content-big" ).hide(); */
+	$( "#content-big" ).hide();
 /* 	$( "#vonnach" ).hide(); */
 	$( "#via" ).hide();
 	$( "#datum" ).hide();
@@ -14,6 +14,7 @@ $( document ).ready(function(){
 
 	
 	var active_tab = "vonnach"; //active tab as string
+	var current_count = 1;
 	
 	
 	function clock() {
@@ -48,10 +49,10 @@ $( document ).ready(function(){
 
 	    
 	    // hide all sections in content
-	    $('#content > section').hide();
+	    $('#content > section').fadeOut(100);
 	    
 	    // show the section belonging to the clicked tab
-	    $('#content > section#' + active_tab ).show();
+	    $('#content > section#' + active_tab ).delay( 100 ).fadeIn(200);
 	
 		switch (active_tab) {
 		  case "vonnach":
@@ -109,35 +110,45 @@ $( document ).ready(function(){
 		
 	}
 	
+	var counter = function ( event ) {
+		console.log("count please");
+		// check if plus or minus is clicked
+/* 		console.log('curr count: ' + current_count); */
+		if ( $(this).attr("class") != undefined && $(this).hasClass('plus') ) {
+			console.log("+");
+			current_count ++;
+			$(event.target).parent('.wrap').find( 'a.counter').text(current_count);
+		} else if (current_count > 0) {
+			console.log("-");
+			current_count --;
+			$('a.counter').text(current_count);
+		};
+	}
+	
 	$( 'sidebar a' ).click( click_tab );
 	$( 'a.next' ).click ( next_tab );
+	$( '#tickets .plus, #tickets .minus').click ( counter ); //call counter func on -/+
 	
 	
 	
 	var click_start_aendern = function ( event ) {
 		var $click_elem = $( event.target );
-		
 		console.log("buttontriggered");
-		
 		$("sidebar").addClass( 'sidebar-out');
 		$("#content" ).hide();
-		$("#content-big" ).show();
-		
-		/* $("#content-big" ).css('left', '-50px'); */
-		
+		$("#content-big" ).css('left', '0');
+		$("#content-big" ).delay( 250 ).fadeIn( 250 );
 	}
 	
 	var click_zurueck = function ( event ) {
 		var $click_elem = $( event.target );
-		
 		console.log("zurueck");
-		
-		$("sidebar").removeClass( 'sidebar-out');
-		$("#content" ).show();
-		$("#content-big" ).hide();
-		
-		/* $("#content-big" ).css('left', '-50px'); */
-		
+		//delay removing class -> time to fadeout keyboard
+		setTimeout(function(){
+        	$('sidebar').removeClass('sidebar-out');
+		}, 200);
+		$("#content-big" ).fadeOut( 300 );
+		$("#content" ).delay( 300 ).fadeIn( 300 );
 	}
 	
 	$( '.enterstart a.button.start, .enterdestination a.button.ziel' ).click( click_start_aendern );

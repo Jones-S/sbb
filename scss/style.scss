@@ -7,6 +7,8 @@ $sbb-hellgrau2: #f1f1f1;
 $sbb-hellgrau3: #b2b2b2;
 $sbb-hellgrau4: #dddddd;
 
+$padding2: 33px;
+
 
 
 @import "../css/via.css";
@@ -130,8 +132,8 @@ sidebar {
 	display: block;
 	position: relative;
 	left: 0;
-	-webkit-transition: left 300ms ease-out;
-    transition: left 300ms ease-out;
+	-webkit-transition: left 250ms ease-out;
+    transition: left 250ms ease-out;
 	
 	img.active_triangle {
 		position: absolute;
@@ -238,7 +240,6 @@ sidebar {
 	left: 338px;
 	
 	section {
-		$padding2: 33px;
 		width: 1024px - 338px - 2*$padding2;
 		height: 709px - 2*$padding2;
 		padding: $padding2;	
@@ -472,7 +473,15 @@ sidebar {
 			margin-bottom: 7px;
 			margin-top:10px;
 		
-		}    
+		}
+		
+		a.button.next {
+			position: absolute;
+			bottom: 0 + $padding2;
+			right: 0 + $padding2;
+			width: 200px;
+			margin: 0;
+		} 
 
   
 		.buttonwrap{
@@ -512,10 +521,10 @@ sidebar {
 
 #content-big {
 	position: relative;
-	-webkit-transition: left 500ms ease-out 1s;
-    -moz-transition: left 500ms ease-out 1s;
-    -o-transition: all 500ms ease-out 1s;
-    transition: left 500ms ease-out 1s;
+	top: -709px;
+	left: 1024px;
+	-webkit-transition: left 500ms ease-out;
+    transition: left 500ms ease-out;
 
 	
 	section#zielaendern {
