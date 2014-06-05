@@ -457,8 +457,15 @@ sidebar {
 		}
 		
 		.abheute {
+			background:#576374 url("../img/icons/datum-white.png") no-repeat left 20px top 22px;
 			margin-right: 20px;
 		}
+		
+		.anderesdatum{
+			background:#576374 url("../img/icons/datum-ad.png") no-repeat left 20px top 22px;
+		}
+			
+		
 		
 	}
 	
@@ -475,12 +482,12 @@ sidebar {
 		
 		
 		.einfach {
-			background:#576374 url("../img/icons/einfach.png") no-repeat left 20px top 15px;
+			background:#576374 url("../img/icons/einfach.png") no-repeat left 20px top 10px;
 			margin-right: 20px;	
 		}
 	
 		.retour {
-			background:#576374 url("../img/icons/retour.png") no-repeat left 20px top 15px;
+			background:#576374 url("../img/icons/retour.png") no-repeat left 20px top 10px;
 		}
 		
 		
