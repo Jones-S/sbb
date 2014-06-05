@@ -135,8 +135,9 @@ $( document ).ready(function(){
 		$("#content-big" ).fadeOut( 300 );
 		$("#content" ).delay( 300 ).fadeIn( 300 );
 		//set ziel
-		ticket_values['ziel'] = 'Kreuzlingen';
+		ticket_values['ziel'] = $('input.autocomplete').val();;
 		console.log(ticket_values['ziel']);
+		console.log('DAFUQ');
 		//update summary
 		update('ziel');
 		$(".autocomplete").blur();
@@ -145,15 +146,7 @@ $( document ).ready(function(){
 	var update = function ( wahl ){
 		console.log('mein wahltab ' + wahl);
 		
-		if (ticket_values['ziel'] = "") {
-			$('p.zielort').text('Zielort2');
-			console.log('ziel undefiniert');
-		} else {
-			// wieso geht das nicht??? MAGNUS
-			$('.zielort').text(ticket_values['ziel']);
-			console.log('ziel klar');
-/* 			$('.zielort').text('Kreuzlingen'); */
-		}
+		
 		
 		if ( wahl  ){
 			$('li.via p.beschreibung').text('Via');
@@ -163,7 +156,11 @@ $( document ).ready(function(){
 
 		switch (wahl) {
 			case "ziel":
-/* 				$('.zielort').text('Kreuzlingen'); */
+				if (ticket_values['ziel'] == "") {
+					$('p.zielort').text('Zielort');
+				} else {
+					$('.zielort').text(ticket_values['ziel']);
+				}
 				$('.vonnach p.aendern').show();
 				break;
 			case "via":
