@@ -83,31 +83,24 @@ $( document ).ready(function(){
 		switch (active_tab) {
 		  case "vonnach":
 		  	$('img.active_triangle').css('top', '65px');
-		    console.log("active: vonnach");
 		    break;
 		  case "via":
 			$('img.active_triangle').css('top', '183px');
-		    console.log("active: via");
 		    break;
 		  case "datum":
 			$('img.active_triangle').css('top', '259px');
-		    console.log("active: datum");
 		    break;
 		  case "einfachretour":
 			$('img.active_triangle').css('top', '335px');
-		    console.log("active: einfachretour");
 		    break;
 		  case "klasse":
 			$('img.active_triangle').css('top', '410px');
-		  	console.log("active: klasse");
 		    break;
 	      case "tickets":
 			$('img.active_triangle').css('top', '486px');
-		  	console.log("active: tickets");
 		    break;
 		  case "preis":
 			$('img.active_triangle').css('top', '618px');
-		    console.log("active: preis");
 		    break;
 		}
 	}
@@ -136,24 +129,19 @@ $( document ).ready(function(){
 		$("#content" ).delay( 300 ).fadeIn( 300 );
 		//set ziel
 		ticket_values['ziel'] = $('input.autocomplete').val();;
-		console.log(ticket_values['ziel']);
-		console.log('DAFUQ');
 		//update summary
-		update('ziel');
+		update('ziel', $('input.autocomplete').val()); //passing wahl = ziel und value = input value
 		$(".autocomplete").blur();
 	}
 	
-	var update = function ( wahl ){
-		console.log('mein wahltab ' + wahl);
+	
+	var update = function ( wahl, value ){
 		
-		
-		
-		if ( wahl  ){
-			$('li.via p.beschreibung').text('Via');
+		if ( wahl != 'tickets' ){
+			ticket_values[wahl] = value;
 		} else {
-			$('li.via p.beschreibung').text(ticket_values['via']);
+			//how to process halbtax etc.
 		}
-
 		switch (wahl) {
 			case "ziel":
 				if (ticket_values['ziel'] == "") {
@@ -164,19 +152,19 @@ $( document ).ready(function(){
 				$('.vonnach p.aendern').show();
 				break;
 			case "via":
-				$('li.via p.beschreibung').text('Via Weinfelden');
+				$('li.via p.beschreibung').text(ticket_values[wahl]);
 				$('.via p.aendern').show();
 				break;
 			case "datum":
-				$('li.datum p.beschreibung').text('Gültig ab heute');
+				$('li.datum p.beschreibung').text(ticket_values[wahl]);
 				$('.datum p.aendern').show();
 				break;
 			case "einfachretour":
-				$('li.einfachretour p.beschreibung').text('Retour');
+				$('li.einfachretour p.beschreibung').text(ticket_values[wahl]);
 				$('.einfachretour p.aendern').show();
 				break;
 			case "klasse":
-				$('li.klasse p.beschreibung').text('2. Klasse');
+				$('li.klasse p.beschreibung').text(ticket_values[wahl]);
 				$('.klasse p.aendern').show();
 				break;
 			case "tickets":
@@ -194,12 +182,20 @@ $( document ).ready(function(){
 	
 	var next_tab = function ( event ) {
 		var $section_name = $( event.target ).closest('section').attr('id');
-		console.log( $section_name );
+		if ($section_name != 'tickets'){
+			var $value = $(event.target).attr('data-value');
+		} else {
+			
+		}
+		//var $value = $(event.target).dataset;
+		//$value.dataset.value = mein wert   ( in html: data-value="mein wert" )
+		//funktioniert leider nicht - JONAS
+		
 		$('#' + $section_name ).hide();
 		$('#' + $section_name ).next().show();
 		active_tab = $('#' + $section_name ).next().attr('id'); //update active tab
 		switch_tab( ); //call switch case function
-		update($section_name); //update summary
+		update( $section_name, $value ); //update summary
 		
 	}
 	
