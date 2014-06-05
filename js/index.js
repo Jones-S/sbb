@@ -15,7 +15,8 @@ $( document ).ready(function(){
 
 	
 	var active_tab = "vonnach"; //active tab as string
-	var current_count = 0;
+	var current_count_half = 0;
+	var current_count_full = 0;
 	
 	var ticket_values = {
 		start:"Zürich HB", 
@@ -138,6 +139,7 @@ $( document ).ready(function(){
 		console.log(ticket_values['ziel']);
 		//update summary
 		update('ziel');
+		$(".autocomplete").blur();
 	}
 	
 	var update = function ( wahl ){
@@ -193,37 +195,54 @@ $( document ).ready(function(){
 		// check if plus or minus is clicked
 		if ( $(this).attr("class") != undefined && $(this).hasClass('plus') ) {
 			console.log("+");
-			current_count ++;
-			$target.parent().parent().find( 'a.counter').text(current_count);
+			if ($(this).hasClass('half')) {
+				current_count_half ++;
+				$target.parent().parent().find( 'a.counter').text(current_count_half);
+			} else {
+				current_count_full ++;
+				$target.parent().parent().find( 'a.counter').text(current_count_full);
+			}
 			
-		} else if (current_count > 0) {
+		} else {
 			console.log("-");
-			current_count --;
-			if(current_count == 0){
-				$target.parent().parent().find( 'a.counter').text("–");
-				current_count = 0;
+			if ($(this).hasClass('half')){
+				current_count_half --;
+				if(current_count_half <= 0){
+					$target.parent().parent().find( 'a.counter').text("–");
+					current_count_half = 0;
+				}
+				$target.parent().parent().find( 'a.counter').text(current_count_half);
+			} else {
+				current_count_full --;
+				if(current_count_full <= 0){
+					$target.parent().parent().find( 'a.counter').text("–");
+					current_count_full = 0;
+				}
+				$target.parent().parent().find( 'a.counter').text(current_count_full);
 			}
-			else
-			{
-			$target.parent().parent().find( 'a.counter').text(current_count);
-			}
+
 		};
 	}
 	
 	var vorschlaege = [ "c++", "java", "php", "coldfusion", "javascript", "asp", "ruby" ];
 	$( ".autocomplete" ).autocomplete({
-	  source: function( request, response ) {
-	          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
-	          response( $.grep( vorschlaege, function( item ){
-	              return matcher.test( item );
-	          }) );
-	      }
+		source: function( request, response ) {
+			$.get('http://transport.opendata.ch/v1/locations?query=' + request.term,
+			function callback (data) {
+				var dataarray = [];
+				for (var i = 0; i < data.stations.length; i++){
+					dataarray.push(data.stations[i].name);
+				}
+				response(dataarray);
+			});
+		}
 	});
 	
 	$( 'sidebar a' ).click( click_tab );
 	$( 'a.next' ).click ( next_tab );
 	$( 'a.next2' ).click ( goto_via );
 	$( '#tickets .plus, #tickets .minus').click ( counter ); //call counter func on -/+
+	$( '.ui-corner-all' ).click ( goto_via );
 	
 	
 	
